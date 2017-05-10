@@ -1,0 +1,712 @@
+/*= -----------------------------------------------
+    富海360通用样式
+    -----------------------------------------------=*/
+
+/*标签*/
+.tag_list {
+  overflow: hidden;
+  padding: 20px;
+}
+
+.tag_list-title {
+  overflow: hidden;
+  margin-bottom:30px;
+
+}
+
+.tag_list .tag_list-title h2 {
+  color: #333333;
+  font: 18px "Microsoft YaHei";
+  float:left;
+}
+
+.tag_list .search {
+  display: inline;
+  float: right;
+  height: 25px;
+  overflow: hidden;
+}
+
+.tag_list .search .enter {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #D5D5D5;
+  color: #A9B3BE;
+  height: 21px;
+  line-height: 19px;
+  margin-right: 3px;
+  padding: 0 3px;
+  width: 169px;
+  float:left;
+}
+
+.tag_list .search .btn {
+  background: url("search-btn.png")/*tpa=http://static2.fuhai360.com/global/images/search-btn.png*/ no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: medium none;
+  height: 23px;
+  text-align: center;
+  width: 58px;
+  display:block;
+  float:left;
+}
+
+.tag_list ul {
+  border-top: 1px solid #CCCCCC;
+}
+
+.tag_list li {
+  border-bottom: 1px solid #CCCCCC;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+}
+
+.tag_list li h3 {
+  color: #333333;
+  float: left;
+  font: 36px "Microsoft YaHei";
+  padding: 0 20px 0 0;
+  text-align: center;
+  width: 40px;
+}
+
+.tag_list li .tag_all {
+  float: left;
+  font-size: 14px;
+  padding-top: 20px;
+  width:92%;
+}
+
+.tag_list li .tag_all a {
+  color: #666666;
+  display: block;
+  float: left;
+  margin: 0 40px 20px 0;
+}
+
+.tag_list .search .hascontent {
+     color: #333333 !important;
+}
+
+.main_tag {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: auto 0;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.main_tag .tag_name {
+  border-bottom: 2px solid #333333;
+  margin-bottom: 15px;
+  height:58px;
+  position:relative;
+}
+
+.main_tag .tag_single {
+  font: 30px "Microsoft YaHei";
+  margin-bottom: 20px;
+}
+
+.tag_p1 {
+  color: #999999;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.main_tag .line_list {
+  width: 100%;
+}
+
+.tag_summary {
+    color: #999999;
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.tag_source {
+  color: #999999;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.page_nav {
+  clear: both;
+  color: #666666;
+  font: 12px/24px Arial;
+  padding: 15px 0;
+  text-align: center;
+}
+
+ .main_tag .main_right {
+  float: right;
+  width:25%;
+}
+
+.user {
+  color: #999999;
+  font-size: 12px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.main_tag .main_right a.tag_pbox {
+  background: url("login_come.png")/*tpa=http://static2.fuhai360.com/css/login_come.png*/ repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: inline-block;
+  height: 98px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.main_tag .collect {
+  margin-bottom: 20px;
+}
+
+.main_tag .collect ul {
+  margin-bottom: 20px;
+}
+
+.main_tag .list li .tag_source a {
+  color: #333333;
+  margin-right: 5px;
+}
+
+.main_tag .list li a {
+  color: #999999;
+  font-size: 12px;
+}
+
+.main_tag .list li a.tit_list {
+  color: #333333;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.main_tag .main_left {
+  min-height: 550px;
+  width: 71%;
+}
+
+.main_tag .collect ul .pcOtherSItem {
+  border-bottom: 1px dotted #DEDEDE;
+  overflow: hidden;
+  padding: 0 3px 0 8px;
+}
+
+.main_tag .collect ul .itemD {
+  padding: 11px 0 9px;
+  height:60px;
+}
+
+.pcOtherPcItem .pic, .pcOtherSItem .pic {
+  float: left;
+  height: 60px;
+  margin-right: 9px;
+  overflow: hidden;
+  width: 60px;
+}
+
+fieldset, img {
+  border: 0 none;
+}
+
+.pcOtherPcItem .content, .pcOtherSItem .content {
+  overflow: hidden;
+}
+
+.product-tags {
+  height: 40px;
+  width: 104px;
+  font-size:10px;
+}
+
+    .product-tags a {
+    color: #ED5F01 !important;
+    display:inline !important;
+    margin-right:5px;
+    }
+
+.tag_source a {
+    color: #ED5F01 !important;
+}
+
+.main_tag .not_search {
+  background: url("not_search.png")/*tpa=http://static2.fuhai360.com/global/images/not_search.png*/ no-repeat scroll center top rgba(0, 0, 0, 0);
+  color: #999999;
+  font: 18px/30px "Microsoft YaHei";
+  margin-top: 40px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.main_tag .tag_name .tag_single .links {
+    position:absolute;
+    bottom:15px;
+    right:10px;
+    font-size: 13px;
+}
+
+.tag2box a {
+  background-color: #EEEEEE;
+  border: 1px solid #EEEEEE;
+  border-radius: 10px 10px 10px 10px;
+  display: inline-block;
+  line-height: 100%;
+  margin-right: 10px;
+  padding: 4px 10px;
+  margin-bottom:10px;
+}
+
+.tag2box {
+  margin: 10px 0;
+  padding-left:15px;
+}
+
+.main_tag .main-right-title {
+  border-bottom: 1px solid #EBEBEB;
+  color: #000000;
+  font: 18px '微软雅黑','Microsoft Yahei',Arial,Sans-Serif !important;
+  padding-bottom: 5px;
+  position: relative;
+  margin-bottom:10px;
+}
+
+.main_tag .main-right-title i {
+  bottom: -7px;
+  height: 7px;
+  left: 14px;
+  overflow: hidden;
+  position: absolute;
+  width: 13px;
+  background:url("bg.gif")/*tpa=http://static2.fuhai360.com/global/images/bg.gif*/ no-repeat scroll -37px -34px rgba(0, 0, 0, 0);
+}
+
+a.tag {
+  background-color: #E0EAF1;
+  border-bottom: 1px solid #3E6D8E;
+  border-right: 1px solid #7F9FB6;
+  color: #3E6D8E !important;
+  font-size: 12pt;
+  line-height: 2.4;
+  margin: 2px 2px 2px 0;
+  padding: 2px 4px;
+  text-decoration: none;
+  white-space: nowrap;
+  border-left: 1px solid #DBDBD5;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 1px 0 #EEEEEE;
+  display: inline-block;
+  position: relative;
+}
+
+a.tag em {
+  color: #666666;
+  font-size: 7pt;
+  font-style: normal;
+  margin-left: 2px;
+}
+
+a.tag:hover {
+	background-color: #3E6D8E;
+	color: #fff !important;
+    text-decoration:none;
+}
+
+a.tag:hover em {
+	color: #fff !important;
+}
+
+.Tags a.project {
+	background-color: #cfc;
+	color: #060;
+}
+
+.Tags a.project:hover {
+	background-color: #40AA53;
+	color: #fff;
+}
+
+a.a-tip-tag {
+    border-bottom: 1px dotted #536DA6;
+}
+
+a.a-tip-tag:hover {
+    color:#536DA6 !important;
+    text-decoration:none !important;
+}
+
+.main_tag .main_left .list li {
+    float: left;
+    margin: 10px 0;
+    width: 100%;
+    padding:10px;
+}
+
+.main_tag .main_left .list li:hover {
+    background: #f8f8f8;
+}
+
+.main_tag .main_left .list li a.tit_list {
+  color: #333333;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.dwon_words {
+  margin: 10px 0;
+}
+
+.main_tag .tag-nav a {
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.main_tag .not_search h3 {
+  margin-bottom: 10px;
+}
+
+.main_tag .tag-nav a {
+  font-size: 22px;
+  margin: 0 10px;
+  color: #3E6D8E !important;
+  text-decoration: none;
+}
+
+.main_tag .tag-nav {
+  color: #3E6D8E !important;
+  font-weight: bold;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.main_tag .tag_single .links a {
+  margin: 0 10px;
+}
+
+/*头部模板*/
+.logo_content div div {
+  float: right;
+  width: 350px;
+}
+
+.logo_content div div h3 {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.logo_content div div h3 span {
+  font-size: 18px;
+}
+
+/*搜索框*/
+.header-search {
+    background-color: #F1F5F8;
+    top:30px;
+    padding: 5px;
+    position: absolute;
+    right: 25px;
+    z-index: 12;
+}
+
+.header-search .search .search_button {
+  display:block;
+  background: url("search_button.gif")/*tpa=http://static2.fuhai360.com/global/images/search_button.gif*/ no-repeat scroll 0 0 ;
+  border: medium none;
+  cursor: pointer;
+  height: 22px;
+  vertical-align: inherit;
+  width: 52px;
+  float:left;
+}
+
+.header-search .search .search_enter {
+  border: 1px solid #DCDCDC;
+  height: 20px;
+  line-height: 20px;
+  width: 152px;
+  float:left;
+  color:#999;
+}
+
+.header-search .search .search_dropdown {
+background: url("search_type_options.gif")/*tpa=http://static2.fuhai360.com/global/images/search_type_options.gif*/ repeat scroll 0 0;
+color: #999999;
+float: left;
+height: 22px;
+padding-left: 5px;
+width: 52px;
+display: block;
+}
+
+.header-search .search ul {
+background: none repeat scroll 0 0 #FFFFFF;
+border: 1px solid #BCBCBC;
+left: 80px;
+position: absolute;
+top: 22px;
+width: 285px;
+z-index:999;
+}
+
+.header-search .search ul li {
+  border-bottom: 1px dashed #BCBCBC;
+  line-height: 20px;
+}
+
+.header-search .search ul.select {
+  left: 0;
+  width: 74px;
+}
+
+.header-search .search {
+  position: relative;
+}
+
+.header-search .search ul li a {
+    display: block;
+    padding: 1px 10px 0 10px;
+}
+
+.header-search .search ul li a:hover {
+    background: #f8f8f8;
+    color: #333;
+    text-decoration: none;
+}
+
+/*在线留言*/
+#messageonline
+{
+    height: 100%;
+    width: 100%;
+}
+
+#messageonline input,#messageonline textarea {
+  border: 1px solid #ccc;
+}
+
+#messageonline .messageonline_items
+{
+    float: left;
+    padding: 15px;
+    width:640px;
+}
+
+#messageonline .messageonline_items div
+{
+    float: left;
+    height: 35px;
+    width: 48%;
+    margin: 4px 0;
+}
+
+#messageonline #div_onlineContent
+{
+    height: 90px;
+    width: 90%;
+}
+
+#messageonline .messageonline_items label
+{
+    display: block;
+    float: left;
+    width: 90px;
+    line-height: 30px;
+    height:30px;
+}
+
+#messageonline .messageonline_items input
+{
+    height: 30px;
+    width: 150px;
+}
+
+#messageonline .messageonline_items em
+{
+    color: red;
+}
+
+#messageonline #onlineContent
+{
+    height: 80px;
+    width: 460px;
+}
+
+#messageonline .div_line
+{
+    clear: both;
+    border: 1px solid silver;
+}
+
+#messageonline .messageonline_command
+{
+    text-align: center;
+    width: 50%;
+    padding-top: 8px;
+    margin-left:280px;
+    height:25px;
+}
+
+#messageonline .messageonline_command a
+{
+    border: 1px solid silver;
+    display: block;
+    font-size: 17px;
+    height: 25px;
+    margin: 0 auto;
+    width: 90px;
+    float:left;
+    color:#00A849;
+    cursor:pointer;
+      line-height:25px;
+}
+
+#messageonline .messageonline_command  #resultMsg {
+  color: #000000;
+  display: block;
+  float: left;
+  font-size: 11px;
+  height: 12px;
+  line-height: 12px;
+  margin-left: 8px;
+  margin-top: 8px;
+  padding: 3px;
+}
+
+#messageonline #progress span {
+  display: block;
+  float: left;
+  height: 12px;
+  line-height: 18px;
+}
+#messageonline #progress img {
+  float: left;
+  margin-right: 5px;
+  width: 15px;
+}
+
+#messageonline .messageonline_command .success
+{
+    color:#00A849 !important;
+}
+#messageonline .messageonline_command .error
+{
+    color:red !important;
+}
+
+#messageonline #div_onlineVc {
+  width: 450px;
+}
+
+#messageonline #div_onlineVc input {
+  float: left;
+}
+
+#messageonline #div_onlineVc .img-wrap img {
+  float: left;
+width:auto;
+}
+
+ 
+#messageonline .div_messageList {
+  padding: 15px;
+}
+
+#messageonline .div_messageList dt,#messageonline .div_messageList dd {
+  float: left;
+}
+
+#messageonline .div_messageList .dt_name {
+  height: 28px;
+  width: 48%;
+  font-size:14px;
+  font-weight:bold;
+}
+
+#messageonline .div_messageList .dl_time {
+  height: 28px;
+  width: 48%;
+  text-align:right;
+}
+
+#messageonline .div_messageList .dl_content {
+  border-bottom: 2px solid silver;
+  width: 96%;
+  margin-bottom:20px;
+}
+
+#messageonline .div_messageList .div_item_line {
+  clear: both;
+  border-bottom: 1px solid silver;
+    width:96%;
+}
+
+
+/*在线留言分页样式*/
+#messageonline .div_messageList .pagination_message
+{
+    text-align: center;
+    font-family: Arial, '宋体', Sans-Serif;
+}
+
+#messageonline .div_messageList .pagination_message .current
+{
+    font-weight: bold;
+    background-color: #00A849;
+    color:#FFF;
+}
+
+#messageonline .div_messageList .pagination_message span, .pagination_message a
+{
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 5px;
+    padding: 0 6px;
+    border:1px solid #00A849;
+    color:#00A849
+}
+
+#messageonline .div_messageList .div_pagination_line {
+  clear: both;
+  margin-bottom: 20px;
+}
+
+/*头部控制-->头部内容，头部LOGO，头部搜索框 位置排序*/
+.logo_content {
+  z-index: 10;
+}
+
+.head_logo {
+  position: relative;
+  z-index: 5;
+}
+
+
+.related-product-list ul {
+  clear: both;
+  overflow: hidden;
+  margin: 0;
+  padding: 5px 0;
+  list-style-type: none;
+  *zoom: 1;
+}
+
+.related-product-list li {
+  float: left;
+  padding: 10px;
+  margin: 15px 16px;
+  width: 25%;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.related-product-list img {
+  display: block;
+  margin: 0 auto;
+  width:160px;
+  height: 120px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,3452 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.fll {
+    float: left;
+}
+
+.flr {
+    float: right;
+}
+
+/*=================通用部分================*/
+body {
+    background: #f1f1f1;
+    font-family: "宋体";
+    font-size: 12px;
+    color: #444;
+}
+
+.w1000 {
+    width: 1000px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/*===============================================================乐学教育主页===========================================*/
+
+/*======头部======*/
+.header {
+    height: 138px;
+    background: url(header_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/header_bg.gif*/ repeat-x;
+}
+
+.head {
+    height: 138px; /*background:url(images/head_right_bg.jpg) no-repeat top right;*/
+    position: relative;
+}
+
+.header_bg {
+    width: 724px;
+    height: 138px;
+    position: relative;
+    z-index: 0;
+}
+
+.head_left {
+    height: 138px;
+    width: 276px;
+}
+
+    .head_left img {
+        margin-top: 28px;
+    }
+
+.head_right {
+    width: 189px;
+    height: 39px;
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    right: 0px;
+}
+
+    .head_right ul {
+        float: right;
+    }
+
+        .head_right ul li {
+            float: left;
+            background: url(li_img1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/li_img1.gif*/ no-repeat 8px center;
+            height: 24px;
+            line-height: 24px;
+            margin-top: 15px;
+        }
+
+            .head_right ul li a {
+                color: #444;
+                padding-left: 15px;
+            }
+
+                .head_right ul li a:hover {
+                    text-decoration: underline;
+                }
+
+/*======导航======*/
+.nav_bar {
+    height: 49px;
+    background: url(nav_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/nav_bg.gif*/ repeat-x;
+}
+
+.nav {
+    height: 44px;
+    background: url(menu_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/menu_bg.gif*/ repeat-x top;
+}
+
+    .nav ul {
+        font-family: "微软雅黑";
+        font-size: 14px;
+    }
+
+        .nav ul li {
+            float: left;
+            height: 44px;
+            line-height: 44px;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+
+            .nav ul li a {
+                color: #fff;
+                display: block;
+            }
+
+                .nav ul li a:hover {
+                    color: #fb0000;
+                }
+
+        .nav ul .home a {
+            color: #fb0000;
+        }
+
+/*======banner条======*/
+.banner {
+    height: 303px;
+    background: url(banner_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/banner_bg.gif*/ repeat-x;
+}
+
+#slide-index {
+    min-width: 1000px;
+    width: auto;
+    height: 303px;
+    overflow: hidden;
+    position: relative;
+}
+
+    #slide-index .slides {
+        min-width: 1000px;
+        width: auto;
+        height: 303px;
+    }
+
+    #slide-index .slide {
+        min-width: 1000px;
+        height: 303px;
+        float: left;
+        position: relative;
+    }
+
+    #slide-index .image {
+        z-index: 1;
+        position: absolute;
+    }
+
+    #slide-index .text, #slide-index .button {
+        z-index: 2;
+        position: absolute;
+        top: -500px;
+    }
+
+    #slide-index .button {
+        display: none;
+        width: 138px;
+    }
+
+    #slide-index .control {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        height: 19px;
+        cursor: pointer;
+        z-index: 40;
+    }
+
+        #slide-index .control a {
+            width: 11px;
+            height: 11px;
+            cursor: pointer;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background: #fff;
+            margin-right: 6px;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+        }
+
+            #slide-index .control a:hover, #slide-index .control a.active {
+                background: #666;
+                opacity: 1;
+                filter: alpha(opacity=100);
+            }
+
+.autoMaxWidth {
+    overflow: hidden;
+    position: relative;
+    height: 232px;
+}
+/*======快捷通道======*/
+.kjtd {
+    height: 57px;
+    background: url(kjtd_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_bg.gif*/ repeat-x;
+}
+
+.kjtd_bar img {
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.kjtd_bar table {
+    margin-top: 8px;
+    display: block;
+    height: 29px;
+    float: left;
+}
+
+    .kjtd_bar table tr {
+        display: inline;
+    }
+
+        .kjtd_bar table tr td {
+            float: left;
+            height: 29px;
+            line-height: 29px;
+            font-family: "微软雅黑";
+            font-size: 18px;
+            text-align: center;
+            text-indent: 25px;
+            display: block;
+            vertical-align: bottom;
+            display: inline;
+        }
+
+            .kjtd_bar table tr td a {
+                color: #949494;
+                display: block;
+                display: block;
+                margin-left: 55px;
+            }
+
+                .kjtd_bar table tr td a:hover {
+                    color: #ec0000;
+                }
+
+        .kjtd_bar table tr .qqzx a {
+            background: url(kjtd_qq.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_qq.gif*/ no-repeat left center;
+        }
+
+            .kjtd_bar table tr .qqzx a:hover {
+                background: url(kjtd_qq1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_qq1.gif*/ no-repeat left center;
+            }
+
+        .kjtd_bar table tr .zxzx a {
+            background: url(kjtd_zx.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_zx.gif*/ no-repeat left center;
+        }
+
+            .kjtd_bar table tr .zxzx a:hover {
+                background: url(kjtd_zx1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_zx1.gif*/ no-repeat left center;
+            }
+
+        .kjtd_bar table tr .zxly a {
+            background: url(kjtd_ly.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_ly.gif*/ no-repeat left center;
+        }
+
+            .kjtd_bar table tr .zxly a:hover {
+                background: url(kjtd_ly1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_ly1.gif*/ no-repeat left center;
+            }
+
+        .kjtd_bar table tr .zxxz a {
+            background: url(kjtd_xz.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_xz.gif*/ no-repeat left center;
+        }
+
+            .kjtd_bar table tr .zxxz a:hover {
+                background: url(kjtd_xz1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_xz1.gif*/ no-repeat left center;
+            }
+/*======挑战高考 直击高考 走进乐学======*/
+.news {
+    height: 276px;
+    background: url(news_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/news_bg.jpg*/;
+}
+
+.video {
+    width: 296px;
+    height: 211px;
+    margin-left: 12px;
+    margin-top: 28px;
+    _display: inline;
+}
+
+/*======挑战高考  直击高考======*/
+.gk {
+    width: 342px;
+    height: 211px;
+    margin-left: 18px;
+    margin-top: 20px;
+    _display: inline;
+}
+
+.tabs li {
+    width: 76px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-family: "黑体";
+    margin-top: 8px;
+    display: inline;
+}
+
+.tabs span {
+    float: left;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+    .tabs span a {
+        color: #444;
+    }
+
+        .tabs span a:hover {
+            text-decoration: underline;
+        }
+
+.tabs .hover {
+    background: url(news_hover.gif)/*tpa=http://static2.fuhai360.com/n140310/images/news_hover.gif*/ no-repeat;
+    color: #fff;
+    cursor: pointer;
+}
+
+.article {
+    width: 340px;
+    height: 162px;
+    float: left;
+    margin-top: 10px;
+    display: inline;
+}
+
+#con_tab_1, #con_tab_2 {
+    width: 340px;
+    height: 162px;
+    margin-left: 5px;
+    margin-top: 3px;
+    float: left;
+    display: inline;
+}
+
+    #con_tab_1 li, #con_tab_2 li {
+        width: 340px;
+        height: 28px;
+        line-height: 28px;
+        border-bottom: 1px solid #d0d0d0;
+        background: url(news_li1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/news_li1.gif*/ no-repeat left center;
+        text-indent: 15px;
+        vertical-align: bottom;
+    }
+
+    #con_tab_1 span, #con_tab_2 span {
+        float: right;
+    }
+
+    #con_tab_1 li a, #con_tab_2 li a {
+        color: #444;
+        display: block;
+    }
+
+        #con_tab_1 li a:hover, #con_tab_2 li:hover {
+            background: url(news_li2.gif)/*tpa=http://static2.fuhai360.com/n140310/images/news_li2.gif*/ no-repeat left center;
+        }
+/*======走进乐学======*/
+.zjlx {
+    width: 294px;
+    height: auto;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-top: 20px;
+    _display: inline;
+}
+
+    .zjlx h2 {
+        height: 21px;
+        font-family: "微软雅黑";
+        font-size: 14px;
+        margin-left: 90px;
+        line-height: 21px;
+        margin-top: 8px;
+        display: inline;
+    }
+
+        .zjlx h2 a {
+            color: #ea1718;
+            display: inline;
+        }
+
+            .zjlx h2 a:hover {
+                text-decoration: underline;
+            }
+
+.zjlx_pic {
+    margin-top: 4px;
+    width: 262px;
+    height: 89px;
+    padding: 3px;
+    background: #feffff;
+    border: 1px solid #d7d7d7;
+    display: inline;
+    margin-left: 15px;
+}
+
+.zjlx_txt {
+    width: 260px;
+    height: 67px;
+    margin-left: 20px;
+    margin-top: 8px;
+    color: #666;
+    text-indent: 24px;
+    line-height: 24px;
+    display: inline;
+}
+
+/*======师资力量 成功案例======*/
+.sz_al {
+    height: 288px;
+    margin-top: 18px;
+}
+/*======师资力量======*/
+.szll {
+    width: 700px;
+    height: 288px;
+    background: url(szll_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/szll_bg.jpg*/;
+}
+
+    .szll a:hover {
+        text-decoration: underline;
+    }
+
+    .szll h2, .cgal h2, .cgzs h2 {
+        font-family: "微软雅黑";
+        font-size: 18px;
+        color: #fff;
+        line-height: 24px;
+        margin-top: 6px;
+        margin-left: 36px;
+    }
+
+    .szll ul {
+        margin-top: 20px;
+    }
+
+        .szll ul li {
+            width: 164px;
+            float: left;
+            margin-left: 33px;
+            margin-right: 33px;
+            line-height: 20px;
+            _display: inline; /*去除IE6双边距*/
+        }
+
+            .szll ul li img {
+                margin-bottom: 8px;
+            }
+
+            .szll ul li dl dt {
+                text-align: center;
+                font-size: 14px;
+                font-weight: bold;
+                color: #444;
+            }
+
+            .szll ul li dl dd {
+                color: #666;
+                margin-bottom: 8px;
+            }
+
+            .szll ul li a {
+                float: right;
+                color: #b50802;
+            }
+
+    .szll h2 a, .cgal h2 a, .cgzs h2 a {
+        color: #444;
+        margin-right: 10px;
+        float: right;
+        font-size: 12px;
+        font-weight: normal;
+        font-family: "宋体";
+    }
+
+        .szll h2 a:hover, .cgal h2 a:hover, .cgzs h2 a:hover, .mxxy h2 a:hover {
+            text-decoration: underline;
+        }
+
+/*======成功案例======*/
+.cgal {
+    width: 300px;
+    height: 288px;
+    background: url(cgal_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/cgal_bg.jpg*/;
+}
+
+    .cgal ul {
+        margin-top: 15px;
+    }
+
+.cgan_li2 {
+    background: url(cgal_li_02.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/cgal_li_02.jpg*/ no-repeat 14px center;
+    line-height: 25px;
+    height: 25px;
+}
+
+.cgan_li1 {
+    background: url(news_li1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/news_li1.gif*/ no-repeat 14px center;
+    line-height: 25px;
+    height: 25px;
+}
+
+    .cgan_li1:hover {
+        background: url(news_li2.gif)/*tpa=http://static2.fuhai360.com/n140310/images/news_li2.gif*/ no-repeat 14px center;
+        line-height: 25px;
+        height: 25px;
+    }
+
+    .cgan_li1 span {
+        color: #fff;
+    }
+
+    .cgan_li1 span, .cgan_li2 span {
+        margin-left: 18px;
+    }
+
+.cgal ul li a {
+    color: #444;
+    margin-left: 10px;
+}
+
+    .cgal ul li a:hover {
+        text-decoration: underline;
+        color: #d20100;
+    }
+
+/*======成果展示======*/
+.cgzs {
+    height: 291px;
+    background: url(cgzs_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/cgzs_bg.gif*/;
+    margin-top: 18px;
+}
+
+    .cgzs a:hover {
+        text-decoration: underline;
+    }
+
+.wncj, .xsal {
+    width: 251px;
+    height: 224px;
+    margin-left: 15px;
+    margin-right: 18px;
+    margin-top: 15px;
+    _display: inline; /*去除IE6双边距*/
+}
+
+.xqhj {
+    width: 420px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.cgzs h3 {
+    color: #cd0001;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: bold;
+    background: url(cgzs_h2_li.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/cgzs_h2_li.jpg*/ no-repeat 2px center;
+    text-indent: 20px;
+}
+
+.wncj ul li, .xsal ul li, .wncj_text li {
+    background: url(li_img1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/li_img1.gif*/ no-repeat 2px center;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 15px;
+    vertical-align: bottom;
+    width: 240px;
+}
+
+    .wncj ul li a, .xsal ul li a {
+        color: #444;
+        display: block;
+    }
+
+        .wncj ul li a:hover, .xsal ul li a:hover, .wncj_text li a:hover {
+            color: #d20100;
+            background: url(li_img2.gif)/*tpa=http://static2.fuhai360.com/n140310/images/li_img2.gif*/ no-repeat 2px center;
+        }
+
+.xqhj ul li {
+    width: 111px;
+    text-align: center;
+    line-height: 20px;
+    float: left;
+    margin-right: 20px;
+}
+
+.xqhj ul {
+    width: 420px;
+    height: auto;
+    overflow: hidden;
+    margin-left: 13px;
+}
+
+    .xqhj ul li a {
+        color: #444;
+    }
+
+/*======明星学员======*/
+.mxxy {
+    height: 231px;
+    background: url(mxxy_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/mxxy_bg.jpg*/;
+    margin-top: 18px;
+}
+
+    .mxxy h2 {
+        font-family: "微软雅黑";
+        color: #fff;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 12px;
+        margin-left: 25px;
+    }
+
+        .mxxy h2 a {
+            color: #fff;
+            margin-right: 10px;
+            float: right;
+            font-size: 12px;
+            font-weight: normal;
+            font-family: "宋体";
+        }
+
+#demo {
+    overflow: hidden;
+    width: 960px;
+    height: 150px;
+    margin: 13px auto;
+}
+
+#indemo {
+    float: left;
+    width: 800%;
+}
+
+#demo1 {
+    float: left;
+}
+
+#demo2 {
+    float: left;
+}
+
+.slide1 li {
+    width: 128px;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #e3e3e3;
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 18px;
+}
+
+    .slide1 li img {
+        margin: 3px auto;
+    }
+
+    .slide1 li a {
+        color: #444;
+    }
+
+        .slide1 li a:hover {
+            color: #d20100;
+        }
+
+/*======友情链接======*/
+.yqlj {
+    height: 87px;
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    margin-top: 18px;
+}
+
+    .yqlj ul li {
+        float: left;
+        margin-top: 17px;
+        margin-left: 15px;
+    }
+
+.back-top {
+    width: 56px;
+    height: 56px;
+    clear: left;
+    margin-top: -56px;
+    margin-right: 56px;
+}
+
+/*======页面底部======*/
+.footer {
+    background: #5b5b5b;
+    height: 198px;
+    margin-top: 30px;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+    .footer a {
+        color: #ccc;
+    }
+
+.foot {
+    height: 198px;
+    line-height: 24px;
+}
+
+.foot_left {
+    width: 314px;
+}
+
+    .foot_left img {
+        margin-top: 35px;
+    }
+
+.foot_right {
+    width: 610px;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+
+    .foot_right .foot_link li {
+        float: left;
+        background: url(footer_li.png)/*tpa=http://static2.fuhai360.com/n140310/images/footer_li.png*/ no-repeat left center;
+        height: 24px;
+    }
+
+        .foot_right .foot_link li a {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+            .foot_right .foot_link li a:hover {
+                text-decoration: underline;
+            }
+
+    .foot_right .foot_link .foot_li1 {
+        background: none;
+    }
+
+    .foot_right .foot_txt {
+        margin-top: 20px;
+        margin-left: 10px;
+        line-height: 25px;
+    }
+/*===============================================================走进乐学内页===========================================*/
+
+/*======走进乐学======*/
+.banner1 {
+    height: 233px;
+    background: url(banner_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/banner_bg.gif*/ repeat-x;
+}
+
+    .banner1 img {
+        z-index: 1;
+        margin-top: -5px;
+        position: relative;
+    }
+
+.banner_pic {
+    width: 998px;
+    height: 237px;
+    margin: 0 auto;
+}
+
+.zjlx_box {
+    padding-bottom: 30px;
+}
+
+.zjlx_box, .szll_box {
+    margin-top: 10px;
+    background: #FFF url(zjlx_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/zjlx_bg.jpg*/ no-repeat bottom center;
+}
+/*===走进乐学左侧===*/
+.zjlx_lt {
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 35px;
+}
+/*走进乐学左侧菜单*/
+.left_nav {
+    width: 249px;
+    height: auto;
+    overflow: hidden;
+    background: url(left_nav_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/left_nav_bg.gif*/ no-repeat;
+    color: #fff;
+}
+
+    .left_nav h2 {
+        font-weight: normal;
+        font-family: "微软雅黑";
+        font-size: 20px;
+        margin: 15px 0 0 40px;
+    }
+
+    .left_nav p {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 15px;
+    }
+
+.zjlx_lt_menu {
+    width: 222px;
+    height: auto;
+    overflow: hidden;
+    margin: 20px 0 20px 10px;
+    background: url(zjlx_about_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/zjlx_about_bg.jpg*/ no-repeat bottom center;
+    display: inline;
+}
+
+    .zjlx_lt_menu li {
+        width: 222px;
+        height: 31px;
+        line-height: 31px;
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+        background: url(zjlx_about_li_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/zjlx_about_li_bg.jpg*/ no-repeat bottom center;
+        margin-bottom: 5px;
+    }
+
+        .zjlx_lt_menu li a {
+            color: #333;
+            display: block;
+        }
+
+            .zjlx_lt_menu li a:hover, .zjlx_lt_menu .zjlx_about {
+                background: url(zjlx_about_li1.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/zjlx_about_li1.jpg*/;
+                color: #fff;
+            }
+/*走进乐学左侧 往年成绩*/
+.wncj1 { /*margin-left:20px;*/
+    font-weight: normal;
+    width: 249px; /*height:43px; line-height:43px;*/ /*text-indent:10px;*/
+    background: url(left_nav_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/left_nav_bg.gif*/;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    display: inline;
+    padding: 15px 0 0 40px;
+    color: #fff;
+}
+
+    .wncj1 a {
+        color: #fff;
+    }
+
+.wncj1_text {
+    margin: 10px 0 0 10px;
+}
+
+    .wncj1_text li {
+        width: 205px;
+        height: 25px;
+        line-height: 25px;
+        background: url(li_img1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/li_img1.gif*/ no-repeat 10px center;
+        text-indent: 20px;
+    }
+
+        .wncj1_text li a {
+            color: #424242;
+            display: block;
+        }
+
+            .wncj1_text li a:hover {
+                text-decoration: underline;
+                color: #d20100;
+                background: url(li_img2.gif)/*tpa=http://static2.fuhai360.com/n140310/images/li_img2.gif*/ no-repeat 10px center;
+            }
+/*走进乐学左侧 联系我们*/
+.zjlx_lxwm {
+    width: 225px;
+    height: 228px;
+    background: url(zjlx_lxwm.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/zjlx_lxwm.jpg*/ center center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+    .zjlx_lxwm p {
+        margin: 50px 0 0 12px;
+        color: #333;
+        line-height: 24px;
+    }
+
+        .zjlx_lxwm p span {
+            margin-left: 60px;
+        }
+/*走进乐学右侧*/
+.zjlx_rt {
+    margin: 40px 0 0 10px;
+    width: 710px;
+    height: auto;
+    margin-top: 28px;
+    color: #666;
+    margin-right: 5px;
+}
+
+    .zjlx_rt > h1 {
+        float: left;
+        color: #dc0116;
+        font-size: 14px;
+        background: url(cgzs_h2_li.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/cgzs_h2_li.jpg*/ no-repeat 5px center;
+        text-indent: 25px;
+        line-height: 29px;
+        height: 29px;
+        width: 120px;
+        border-bottom: 3px solid #dc0116;
+    }
+
+.xzwz {
+    width: 580px;
+    border-bottom: 3px solid #000;
+    height: 29px;
+    margin-bottom: 5px;
+}
+
+    .xzwz span {
+        float: right;
+        color: #666;
+        line-height: 29px;
+    }
+
+        .xzwz span a {
+            color: #666;
+        }
+
+            .xzwz span a:hover {
+                text-decoration: underline;
+            }
+
+.zjlx_rt h2 {
+    font-family: "微软雅黑";
+    font-size: 20px;
+    color: #000;
+}
+
+.zjlx_rt hr {
+    width: 680px;
+    height: 1px;
+    color: #e4e4e4;
+    margin: 10px 0 0 13px;
+}
+
+.jyjj {
+    width: 680px;
+    height: auto;
+    overflow: hidden;
+    margin: 20px 0 0 13px;
+}
+
+.jyjj_txt {
+    margin: 20px 0 0 13px;
+}
+
+.jyjj_pic {
+    width: 274px;
+    height: 121px;
+    background: url(jyjj_pic_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/jyjj_pic_bg.jpg*/;
+}
+
+    .jyjj_pic img {
+        margin: 7px 0 0 7px;
+    }
+
+.jyjj_txt p {
+    line-height: 25px;
+    text-indent: 24px;
+}
+
+.whts_pic {
+    margin: 20px 0 0 8px;
+}
+/*===============================================================学科辅导内页===========================================*/
+
+/*学科辅导右侧 乐学动态*/
+.lxdt li {
+    width: 700px;
+    height: 93px;
+    border: 3px solid #eee;
+    margin-top: 30px;
+    background: url(lxdt_li_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/lxdt_li_bg.gif*/ no-repeat 75px center;
+}
+
+.lxdt_date {
+    height: 57px;
+    width: 57px;
+    font-family: Tahoma, Geneva, sans-serif;
+    line-height: 25px;
+    text-align: center;
+    display: block;
+    margin: 17px 10px 0 10px;
+    display: inline;
+}
+
+    .lxdt_date a {
+        width: 100%;
+        height: 57px;
+        color: #fff;
+        display: block;
+        background: url(lxzx_date_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/lxzx_date_bg.gif*/ no-repeat;
+    }
+
+        .lxdt_date a span {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 18px;
+        }
+
+        .lxdt_date a:hover {
+            background: url(lxzx_date_bg1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/lxzx_date_bg1.gif*/ no-repeat;
+        }
+
+.lxdt_txt {
+    width: 600px;
+    display: inline;
+    margin-left: 5px;
+}
+
+    .lxdt_txt a {
+        float: left;
+        background: url(lxzx_li.gif)/*tpa=http://static2.fuhai360.com/n140310/images/lxzx_li.gif*/ no-repeat left center;
+        font-size: 14px;
+        height: 29px;
+        line-height: 29px;
+        font-weight: bold;
+        text-indent: 20px;
+        color: #333;
+        display: block;
+        margin: 10px 15px 0 10px;
+        display: inline;
+    }
+
+    .lxdt_txt p {
+        width: 600px;
+        float: left;
+        line-height: 21px;
+        margin-left: 11px;
+        color: #999;
+        display: inline;
+    }
+
+    .lxdt_txt a:hover {
+        color: #dc0116;
+    }
+/* 乐学动态分页*/
+.lxdt_fy {
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+    .lxdt_fy li {
+        float: left;
+        border: 1px solid #ddd;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 10px;
+    }
+
+        .lxdt_fy li a {
+            display: block;
+            color: #b61d24;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+            .lxdt_fy li a:hover {
+                color: #fff;
+                background: #b61d24;
+            }
+
+        .lxdt_fy li #hover1 {
+            color: #fff;
+            background: #b61d24;
+        }
+
+/*===============================================================师资力量内页===========================================*/
+/* 教师风采*/
+.szll_box {
+    height: 880px;
+}
+
+.jsfc {
+    width: 710px;
+}
+
+    .jsfc li {
+        float: left;
+        margin: 20px;
+    }
+
+        .jsfc li a:hover {
+            color: #fff;
+        }
+
+.jsfc_pic1 {
+    text-align: center;
+    color: #3c3c3c;
+    width: 176px;
+    height: 155px;
+    border: 1px solid #d8d8d8;
+}
+
+    .jsfc_pic1 a {
+        display: block;
+    }
+
+    .jsfc_pic1 img {
+        margin: 10px;
+        border: none;
+    }
+
+.jsfc1 {
+    width: 710px;
+    height: auto;
+}
+
+    .jsfc1 li {
+        float: left;
+        margin: 20px 20px 30px 20px;
+    }
+
+/* 教师风采*/
+.szll_box {
+    height: 880px;
+}
+
+/*=================弹窗================*/
+.Product_box {
+    position: relative;
+    width: 186px;
+    height: 178px;
+    line-height: 28px;
+    z-index: 1;
+    background: url(zjlx_listbg.png)/*tpa=http://static2.fuhai360.com/n140310/images/zjlx_listbg.png*/ no-repeat center bottom;
+}
+
+.link_img {
+    display: block;
+    width: 160x;
+    height: 140px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #d8d8d8;
+    text-align: center;
+    color: #3c3c3c;
+}
+
+.pop {
+    z-index: 90;
+    position: absolute;
+    left: 185px;
+    top: 0;
+    display: none;
+    padding-bottom: 30px;
+}
+
+.last_box iframe {
+    z-index: 999;
+    position: absolute;
+    left: -445px;
+    top: -100px;
+    display: none;
+}
+
+.pop_box {
+    width: 274px;
+    height: auto;
+    border: 3px solid #f00;
+    background: url(transparent_bg.png)/*tpa=http://static2.fuhai360.com/n140310/images/transparent_bg.png*/ repeat;
+}
+
+    .pop_box span {
+        padding-left: 12px;
+        color: #F00;
+        font-weight: bold;
+    }
+
+    .pop_box h2 {
+        font-family: "微软雅黑";
+        font-size: 18px;
+        color: #3b3b3b;
+        background: url(jsfc_li_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/jsfc_li_bg.gif*/ no-repeat left center;
+        text-indent: 10px;
+        margin: 10px 0 0 10px;
+    }
+
+    .pop_box p {
+        color: #333;
+        line-height: 24px;
+        margin: 10px;
+        text-indent: 25px;
+    }
+
+    .pop_box a {
+        margin-left: 10px;
+    }
+
+.jsfc li.mid_li .pop {
+    left: -273px;
+    top: 0;
+}
+
+.jsfc li.left_li .pop {
+    left: -273px;
+    top: 0;
+}
+
+.jsfc li.last_li1 .pop {
+    top: -20px;
+}
+
+.jsfc li.last_li2 .pop {
+    left: -97px;
+    top: -250px;
+}
+
+.jsfc li.last_li3 .pop {
+    left: -297px;
+    top: -20px;
+}
+/*===============================================================招贤纳士===========================================*/
+.zxns {
+    width: 680px;
+    margin: 30px 0 10px 10px;
+    border-bottom: 1px dashed #666;
+}
+
+    .zxns h3 {
+        font-size: 18px;
+        margin: 10px 0 10px 0;
+        color: #cd0001;
+    }
+
+    .zxns strong {
+        margin-bottom: 10px;
+    }
+
+    .zxns p {
+        line-height: 24px;
+        margin: 10px 0 20px 0;
+    }
+
+
+
+/*----------------------------------------详细页面样式开始--------------------------------------------------*/
+.ArticleTitle {
+    width: 100%;
+    clear: both;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+}
+
+.ArticleTitle2 {
+    width: 96%;
+    text-align: center;
+    line-height: 30px;
+    background: #e7e2da;
+    margin: 0 auto;
+}
+
+.contentD {
+    width: 96%;
+    height: auto;
+    margin-top: 10px;
+    clear: both;
+    text-align: left;
+    margin-left: 20px;
+    line-height: 25px;
+    min-height: 200px;
+}
+
+    .contentD p {
+        width: 96%;
+        clear: both;
+        text-align: left;
+        color: #000;
+    }
+
+.next-pre {
+    width: 96%;
+    line-height: 20px;
+    text-align: right;
+    margin: 40px auto;
+}
+
+    .next-pre span {
+        display: block;
+        color: #000;
+    }
+
+        .next-pre span a {
+            color: #999;
+            text-decoration: none;
+        }
+
+            .next-pre span a:hover {
+                text-decoration: underline;
+            }
+
+/*----------------------------------------分页样式开始-------------------------------------------------*/
+
+
+.pager {
+    color: #CBCBCB;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    margin: 5px;
+}
+
+    .pager span {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .pager .nolink,
+    .pager a {
+        display: inline-block;
+        border: solid 1px #cbcbcb;
+        text-align: center;
+        height: 20px;
+        line-height: 20px;
+        margin: 0 5px;
+        padding: 0 5px;
+    }
+
+    .pager .nolink {
+        color: #b61d24;
+    }
+
+    .pager a {
+        color: #b61d24;
+    }
+
+    .pager ahover {
+        color: #b61d24;
+        background: #EBEBEB;
+        border-color: #cbcbcb;
+    }
+    /*隐藏页码信息*/
+    .pager .pageinfo {
+        display: none;
+    }
+    /*当前页*/
+    .pager .current {
+        color: #CBCBCB;
+        font-weight: bold;
+        background: #b61d24;
+        margin: 0 5px;
+        padding: 0 5px;
+        height: 20px;
+        line-height: 20px;
+        border: solid 1px #cbcbcb;
+    }
+
+.filp {
+    width: 100%;
+    line-height: 20px;
+    height: 40px;
+    text-align: center;
+    clear: both;
+}
+
+/*客户留言*/
+.ts_box {
+    width: 700px;
+    border-collapse: collapse;
+}
+
+    .ts_box td {
+        border: 1px solid #d8d8d8;
+    }
+
+.feedback_input1 {
+    width: 177px;
+    height: 25px;
+    line-height: 25px;
+    color: #666;
+    padding-left: 5px;
+    border: 1px solid #d8d8d8;
+    margin-left: 10px;
+}
+
+.feedback_input2 {
+    width: 520px;
+    height: 148px;
+    line-height: 25px;
+    color: #666;
+    padding: 5px;
+    border: 1px solid #d8d8d8;
+    margin-left: 10px;
+}
+
+.feedback_btn {
+    width: 70px;
+    height: 25px;
+    border: 0;
+    cursor: pointer;
+    background: #CCC;
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+}
+
+/*===底部广告==== 2013-1-15*/
+.dibupiaofu {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    _position: absolute;
+    _top: expression(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight);
+    overflow: visible;
+}
+
+.piaofutiao {
+    LEFT: 0px;
+    BOTTOM: 0px;
+    HEIGHT: 37px;
+    TEXT-ALIGN: left;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: #971605;
+    border-top: 3px solid #fec900;
+}
+
+.bottom_box {
+    position: relative;
+    width: 1024px;
+    height: 37px;
+    margin: 0 auto;
+    background: url(buttom_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/buttom_bg.jpg*/ no-repeat;
+}
+
+.QQ_button {
+    width: 800px;
+    text-align: right;
+}
+
+.registration_button {
+    position: absolute;
+    top: -9px;
+    right: 30px;
+    text-indent: -3500px;
+    width: 156px;
+    height: 46px;
+    background: url(registration_button.png)/*tpa=http://static2.fuhai360.com/n140310/images/registration_button.png*/ no-repeat;
+    cursor: pointer;
+}
+
+.registration_mian {
+    position: absolute;
+    top: -235px;
+    right: -30px;
+    width: 300px;
+    padding: 15px 0 15px 0;
+    border: 1px solid #d8d8d8;
+    background: #8f1603;
+    color: #fff;
+}
+
+    .registration_mian ul {
+        width: 255px;
+        margin: 0 auto;
+    }
+
+        .registration_mian ul li {
+            height: 40px;
+        }
+
+            .registration_mian ul li span {
+                display: inline-block;
+                width: 65px;
+                vertical-align: middle;
+            }
+
+.input_button {
+    width: 177px;
+    height: 25px;
+    padding: 0 3px;
+    color: #666;
+    vertical-align: middle;
+    line-height: 30px;
+    border: 1px solid #d8d8d8;
+}
+
+.select_button {
+    width: 183px;
+    height: 25px;
+    border: 1px solid #d8d8d8;
+    vertical-align: middle;
+}
+
+.registration_button1 {
+    width: 119px;
+    height: 34px;
+    border: 0;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    background: url(submit.png)/*tpa=http://static2.fuhai360.com/n140310/images/submit.png*/ no-repeat;
+}
+
+.submit {
+    padding-left: 65px;
+}
+
+.close {
+    display: inline;
+    cursor: pointer;
+    padding: 20px 0 0 40px;
+}
+
+.test_01 {
+    background: url(test_bg.png)/*tpa=http://static2.fuhai360.com/n140310/images/test_bg.png*/ no-repeat 140px 0;
+}
+
+.test_02 {
+    background: url(test_bg.png)/*tpa=http://static2.fuhai360.com/n140310/images/test_bg.png*/ no-repeat 140px -24px;
+}
+
+/*===============================================================班级设置 2.20===========================================*/
+.bjsz_button {
+    width: 465px;
+    height: 28px;
+    margin-top: 10px;
+    float: left;
+}
+
+    .bjsz_button li {
+        width: 99px;
+        height: 28px;
+        line-height: 28px;
+        margin-right: 13px;
+        float: left;
+        background: #dc0116;
+        text-align: center;
+        font-family: "微软雅黑";
+        font-size: 14px;
+    }
+
+        .bjsz_button li a {
+            color: #fff;
+            display: block;
+        }
+
+.zsdx {
+    width: 600px;
+    line-height: 22px;
+    float: left;
+    margin: 30px 0 0 10px;
+    font-size: 18px;
+    color: #000;
+}
+
+
+@charset "utf-8";
+/**
+ * 商桥访客端 样式重定义 
+ * 解决展现端样式被客户网站覆盖问题
+ * @author renshaobo@baidu.com
+ */
+#BDBridgeWrap,
+#BDBridgeNewWrap,
+#BDBridgeFixedWrap,
+#BDBridgeWrap div,
+#BDBridgeNewWrap div,
+#BDBridgeFixedWrap div,
+#BDBridgeWrap ul,
+#BDBridgeNewWrap ul,
+#BDBridgeFixedWrap ul,
+#BDBridgeWrap li,
+#BDBridgeNewWrap li,
+#BDBridgeFixedWrap li,
+#BDBridgeWrap span,
+#BDBridgeNewWrap span,
+#BDBridgeFixedWrap span,
+#BDBridgeWrap a,
+#BDBridgeNewWrap a,
+#BDBridgeFixedWrap a,
+#BD_QIAO_WEBIM_LITE_WRAP a {
+    /**
+     * width: 100%;
+     */
+    width: auto;
+    height: auto;
+    /**
+     * margin: 0 auto;
+     */
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-position: 0% 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-attachment: scroll;
+    background-image: none;
+    border: none;
+    outline: invert none medium;
+    color: inherit;
+    direction: ltr;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    white-space: normal;
+    word-spacing: normal;
+    font-size: 12px;
+    font-family: Tahoma,"宋体",Helvetica,sans-serif;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: inherit;
+    visibility: inherit;
+    overflow: visible;
+    list-style: none;
+    float: none;
+    /**
+     * clear: both;
+     */
+    clear: none;
+    position: static;
+    top: auto;
+    left: auto;
+    vertical-align: baseline;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+#BDBridgeWrap,
+#BDBridgeNewWrap,
+#BDBridgeFixedWrap {
+    clear: both;
+}
+
+    #BDBridgeWrap,
+    #BDBridgeNewWrap,
+    #BDBridgeFixedWrap,
+    #BDBridgeWrap div,
+    #BDBridgeNewWrap div,
+    #BDBridgeFixedWrap div,
+    #BDBridgeWrap ul,
+    #BDBridgeNewWrap ul,
+    #BDBridgeFixedWrap ul,
+    #BDBridgeWrap li,
+    #BDBridgeNewWrap li,
+    #BDBridgeFixedWrap li {
+        display: block;
+    }
+
+        #BDBridgeWrap span,
+        #BDBridgeNewWrap span,
+        #BDBridgeFixedWrap span,
+        #BDBridgeWrap a,
+        #BDBridgeNewWrap a,
+        #BDBridgeFixedWrap a,
+        #BD_QIAO_WEBIM_LITE_WRAP a {
+            display: inline;
+        }
+/**
+ * 商桥展现端 本地存储样式
+ * @charset "utf-8" 
+ * @import m-front-redim.css
+ * @author renshaobo@baidu.com
+ */
+
+#BDBridgeLS {
+    width: 2px;
+    height: 2px;
+    position: fixed !important;
+    _position: absolute !important;
+    top: 50% !important;
+    right: 10px !important;
+    z-index: 2147483647 !important;
+}
+/**
+ * 商桥展现端 咨询图标样式
+ * 全部以IconContainer为前缀，提高优先级
+ * 原有修复暂不去掉，保证稳定性
+ * @charset "utf-8" 
+ * @import m-front-redim.css
+ * @author renshaobo@baidu.com
+ */
+
+#BDBridgeIconWrap {
+    z-index: 2147483647;
+}
+
+    #BDBridgeFixedWrap #IconContainer,
+    #BDBridgeIconWrap #IconContainer {
+        position: relative;
+        z-index: 2147483647;
+        font-size: 12px;
+        top: 0;
+        left: 0;
+    }
+
+#IconContainer .bdbridge-icon-left {
+    width: auto;
+    zoom: 1;
+}
+
+#IconContainer .bdbridge-icon-right {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    zoom: 1;
+}
+
+/* reset text-align */
+#IconContainer #bridgehead,
+#IconContainer #bridgebottom,
+#IconContainer .bdbridge-icon-left,
+#IconContainer .bdbridge-icon-right,
+#IconContainer .bdbridge-item-txt {
+    text-align: left;
+}
+
+    #IconContainer .bdbridge-icon-right ul,
+    #IconContainer .bdbridge-icon-right li {
+        float: none;
+        display: block;
+    }
+
+#IconContainer .bdbridge-icon-group li {
+    list-style: none;
+}
+
+#IconContainer .bdbridge-icon-group {
+    padding-bottom: 8px;
+    padding-top: 2px;
+    margin-right: 0;
+    margin-left: 0;
+    overflow: hidden;
+}
+
+    #IconContainer .bdbridge-icon-group ul {
+        margin: 0px;
+        margin-top: 2px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+#IconContainer .opacitymask {
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 6px; /* mozilla 私有 */
+    -webkit-border-radius: 6px; /* webkit 私有 */
+    border-radius: 6px; /* 标准写法(chrome支持) */
+}
+
+#IconContainer .opacitymaskhover {
+    filter: alpha(opacity=40);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#IconContainer .masktxt {
+    position: relative;
+    zoom: 1;
+    text-align: left;
+    clear: none;
+    *width: auto;
+}
+
+#IconContainer #bridgeopacity {
+    height: 40px;
+    position: absolute;
+}
+
+#IconContainer .bdbridge-group-item {
+    font-weight: bold;
+    margin-left: 10px;
+    position: relative;
+    -moz-border-radius: 6px; /* mozilla 私有 */
+    -webkit-border-radius: 6px; /* webkit 私有 */
+    border-radius: 6px; /* 标准写法(chrome支持) */
+    zoom: 1;
+    overflow: hidden;
+}
+
+    #IconContainer .bdbridge-group-item:hover {
+        cursor: pointer;
+    }
+
+#IconContainer .bdbridge-user-group-item {
+    font-weight: bold;
+    margin-left: 10px;
+    position: relative;
+    -moz-border-radius: 6px; /* mozilla 私有 */
+    -webkit-border-radius: 6px; /* webkit 私有 */
+    border-radius: 6px; /* 标准写法(chrome支持) */
+    zoom: 1;
+    line-height: 15px\9;
+    overflow: hidden;
+}
+
+    #IconContainer .bdbridge-user-group-item div {
+        *width: auto;
+    }
+
+#IconContainer .bdbridge-icon-group div {
+    line-height: 1.4;
+}
+
+#IconContainer .bdbridge-user-item {
+    line-height: 21px;
+    margin-left: 15px;
+    padding: 1px;
+    overflow: hidden;
+    zoom: 1;
+    height: 24px;
+}
+
+    #IconContainer .bdbridge-user-item:hover,
+    #IconContainer .bdbridge-user-item-hover {
+        cursor: pointer;
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.5;
+        -khtml-opacity: 0.5;
+        opacity: 0.5;
+        border: 1px solid #ffffff;
+        padding: 0px;
+        background: #cccccc;
+    }
+
+#IconContainer #bridgehead {
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: left;
+    overflow: hidden;
+}
+
+#IconContainer .bdbridge-bridgehead-hover {
+    cursor: pointer;
+}
+
+#IconContainer .bdridge-user-img {
+    background: url(btn.png)/*tpa=http://static2.fuhai360.com/n140310/images/btn.png*/ 0 -75px;
+    width: 10px;
+    height: 13px;
+    line-height: 13px;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+#IconContainer .bdridge-user-img-disable {
+    background: url(btn.png)/*tpa=http://static2.fuhai360.com/n140310/images/btn.png*/ -72px -62px;
+    width: 10px;
+    height: 13px;
+    line-height: 13px;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+#IconContainer .bdridge-group-img {
+    background: url(btn.png)/*tpa=http://static2.fuhai360.com/n140310/images/btn.png*/ -34px -48px;
+    width: 16px;
+    height: 14px;
+    line-height: 16px;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#IconContainer .bdridge-group-img-disable {
+    background: url(btn.png)/*tpa=http://static2.fuhai360.com/n140310/images/btn.png*/ -70px -48px;
+    width: 16px;
+    height: 14px;
+    line-height: 16px;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#IconContainer .bdbridge-left-img {
+    background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ -50px 0 no-repeat;
+    width: 25px;
+    height: 66px;
+}
+
+    #IconContainer .bdbridge-left-img:hover {
+        background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ -75px 0 no-repeat;
+        cursor: pointer;
+    }
+
+#IconContainer .bdbridge-left-hd-img {
+    background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ -25px 0 no-repeat;
+    width: 25px;
+    height: 68px;
+}
+
+#IconContainer #bdbridge-left-close {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+    #IconContainer #bdbridge-left-close:hover {
+        cursor: pointer;
+        zoom: 1;
+    }
+
+#IconContainer .bdbridge-left-hd-img:hover {
+    background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ 0 0 no-repeat;
+}
+
+#IconContainer .bdbridge-right-img {
+    background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ -100px 0 no-repeat;
+    width: 23px;
+    height: 66px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+    #IconContainer .bdbridge-right-img:hover {
+        background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ -123px 0 no-repeat;
+    }
+
+#IconContainer .bdbridge-right-hd-img {
+    background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ -146px 0 no-repeat;
+    width: 25px;
+    height: 68px;
+}
+
+    #IconContainer .bdbridge-right-hd-img:hover {
+        background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ -171px 0 no-repeat;
+    }
+
+#IconContainer .bdbridge-item {
+    float: left;
+}
+
+#IconContainer .bdbridge-user-item:after {
+    content: ".";
+    height: 1px;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+#IconContainer .bdbridge-icon-head {
+    margin-left: 0px;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+}
+
+#BDBridgeIconWrap #BDBridgeIconIframe,
+#BDBridgeFixedWrap #BDBridgeIconIframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    background: transparent;
+}
+
+/* added 2012 10 25*/
+#IconContainer .bdbridge-item-txt {
+    margin-left: 15px;
+    width: auto;
+    clear: none;
+    white-space: nowrap;
+    *width: 1px;
+}
+
+#IconContainer .bdbridge-item-group-txt {
+    margin-left: 25px;
+    text-align: left;
+    cursor: pointer;
+    width: auto;
+    margin-top: 4px;
+    clear: none;
+}
+
+#IconContainer .bdbridge-icon-bottom {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+@charset "utf-8";
+
+#BDBridgeWrap, #BDBridgeNewWrap {
+    overflow: visible;
+}
+
+#BDBridgeMess {
+    height: 0;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+#BaiduBridgePigeon span,
+#BaiduBridgePigeon a,
+#BaiduBridgePigeon input,
+#BaiduBridgePigeon textarea {
+    line-height: normal;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    font-family: Arial;
+    text-align: left;
+    overflow: visible;
+    border: 0;
+    position: static;
+    width: auto;
+    height: 20px;
+    text-indent: 0;
+}
+
+#BaiduBridgePigeon textarea {
+    overflow-y: auto;
+    overflow-x: hidden;
+    resize: none;
+    background-color: #fff;
+    color: #000;
+}
+
+#BaiduBridgePigeon input {
+    overflow: hidden;
+    background-color: #fff;
+    color: #000;
+}
+
+#BaiduBridgePigeon .bd_bp_clear_all {
+    clear: both;
+    line-height: 0px;
+    font-size: 0px;
+    height: 0;
+    zoom: 1;
+    overflow: hidden;
+}
+
+#BaiduBridgePigeon .bd_bp_clear {
+    clear: both;
+    line-height: 0px;
+    font-size: 0px;
+    height: 8px;
+    width: 1px;
+    overflow: hidden;
+}
+
+#BaiduBridgePigeon .bd_bp_0_head {
+    color: #666;
+    float: left;
+    width: 60px;
+    line-height: 20px;
+    overflow: hidden;
+    margin-right: 6px;
+}
+
+#BaiduBridgePigeon .bd_bp_1_head {
+    color: #666;
+    float: left;
+    border-right: 1px solid #ccc;
+    padding: 0 4px;
+    background: url(mess.gif)/*tpa=http://static2.fuhai360.com/n140310/images/mess.gif*/;
+    line-height: 20px;
+}
+
+#BaiduBridgePigeon .bd_bp_0_input {
+    float: left;
+    color: #ccc;
+}
+
+#BaiduBridgePigeon .bd_bp_1_input {
+    margin-top: -1px;
+    line-height: 20px;
+    float: left;
+    color: #ccc;
+    border: 1px solid #cccccc;
+    height: 20px;
+}
+
+#BaiduBridgePigeon .bd_bp_mess {
+    height: 92px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-size: 12px;
+    padding-top: 2px;
+    float: left;
+}
+
+#BaiduBridgePigeon .bd_bp_item {
+    height: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    overflow: hidden;
+    width: auto;
+}
+
+#BaiduBridgePigeon .bd_bp_select {
+    border: 1px solid #ccc;
+    vertical-align: auto;
+    float: left;
+    color: #ccc;
+    height: 22px;
+}
+
+#BaiduBridgePigeon .bd_bp_alert {
+    color: #cc3333;
+    padding-left: 1px;
+}
+
+#BaiduBridgePigeon {
+    position: absolute;
+}
+
+    #BaiduBridgePigeon #BdBPTwoPx {
+        height: 1px;
+        font-size: 0px;
+        line-height: 1px;
+        margin: 0 2px;
+    }
+
+    #BaiduBridgePigeon #BdBPOnePx {
+        height: 1px;
+        font-size: 0px;
+        line-height: 1px;
+        margin: 0 1px;
+    }
+
+    #BaiduBridgePigeon #BdBPBody {
+        background-color: #f5f5f5;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: auto;
+    }
+
+    #BaiduBridgePigeon #BdBPTitle {
+        padding: 3px 9px 5px;
+        zoom: 1;
+        width: auto;
+    }
+
+    #BaiduBridgePigeon #BdBPTitleText {
+        float: left;
+        font-weight: bold;
+        background: url(mess-text.png)/*tpa=http://static2.fuhai360.com/n140310/images/mess-text.png*/;
+        width: 61px;
+        height: 21px;
+    }
+
+    #BaiduBridgePigeon #BdBPForm0 {
+        padding: 8px 0px 8px 8px;
+    }
+
+    #BaiduBridgePigeon #BdBPCopyRight {
+        height: 16px;
+        line-height: 16px;
+        margin-top: 7px;
+    }
+
+    #BaiduBridgePigeon #BdBPCrIcon {
+        margin: 4px 6px 0 0;
+        float: left;
+    }
+
+    #BaiduBridgePigeon #BdBPCrIconRed {
+        background-color: #bb2a1f;
+        width: 18px;
+        height: 5px;
+        line-height: 0;
+        font-size: 0;
+        float: left;
+        cursor: pointer;
+    }
+
+    #BaiduBridgePigeon #BdBPCrIconBlue {
+        background-color: #342aff;
+        width: 18px;
+        height: 5px;
+        line-height: 0;
+        font-size: 0;
+        float: left;
+        cursor: pointer;
+    }
+
+    #BaiduBridgePigeon #BdBPClose {
+        float: right;
+        background: url(messbtn.png)/*tpa=http://static2.fuhai360.com/n140310/images/messbtn.png*/ 0px 0px;
+        width: 19px;
+        height: 19px;
+    }
+
+        #BaiduBridgePigeon #BdBPClose:hover {
+            background: url(messbtn.png)/*tpa=http://static2.fuhai360.com/n140310/images/messbtn.png*/ -19px 0px;
+        }
+
+        #BaiduBridgePigeon #BdBPClose:active {
+            background: url(messbtn.png)/*tpa=http://static2.fuhai360.com/n140310/images/messbtn.png*/ -38px 0px;
+        }
+
+    #BaiduBridgePigeon #BdBPSend {
+        width: 91px;
+        height: 23px;
+        line-height: 22px;
+        text-align: center;
+        color: #000;
+        margin: 4px 0;
+        position: relative;
+        margin-left: 60px;
+        -ms-border-radius: 6px; /* ms 私有 */
+        -o-border-radius: 6px; /* opera 私有 */
+        -moz-border-radius: 6px; /* mozilla 私有 */
+        -webkit-border-radius: 6px; /* webkit 私有 */
+        border-radius: 6px; /* 标准写法(chrome支持) */
+    }
+
+        #BaiduBridgePigeon #BdBPSend:hover {
+            background-position: 0 -62px;
+        }
+
+        #BaiduBridgePigeon #BdBPSend:active {
+            background-position: 0 -84px;
+        }
+
+    #BaiduBridgePigeon .opacitymask {
+        filter: alpha(opacity=100);
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 91px;
+        height: 23px;
+        -moz-border-radius: 6px; /* mozilla 私有 */
+        -webkit-border-radius: 6px; /* webkit 私有 */
+        border-radius: 6px; /* 标准写法(chrome支持) */
+    }
+
+        #BaiduBridgePigeon .opacitymask:hover {
+            filter: alpha(opacity=60);
+            -moz-opacity: 0.6;
+            -khtml-opacity: 0.6;
+            opacity: 0.6;
+            position: absolute;
+            -moz-border-radius: 6px; /* mozilla 私有 */
+            -webkit-border-radius: 6px; /* webkit 私有 */
+            border-radius: 6px; /* 标准写法(chrome支持) */
+        }
+
+    #BaiduBridgePigeon #BdBPFoot {
+        background: #f5f5f5;
+        border: 1px solid #f5f5f5;
+        width: auto;
+    }
+
+    #BaiduBridgePigeon .BdBridgeLogo {
+        zoom: 1;
+        width: 66px;
+        height: 17px;
+        margin-left: 70px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background: url(btn.png)/*tpa=http://static2.fuhai360.com/n140310/images/btn.png*/ -88px -72px;
+    }
+
+    #BaiduBridgePigeon .bd_bp_pigeon {
+        width: auto;
+    }
+
+
+
+@charset "utf-8";
+/**
+ * 商桥展现端 邀请框样式
+ * 全部以BDBridgeInviteWrap为前缀，提高优先级
+ * 原有修复暂不去掉，保证稳定性
+ * @charset "utf-8" 
+ * 由于所以模块都引入，暂时只有icon @import m-front-redim.css 其它模块不需要引入
+ * @author renshaobo@baidu.com
+ */
+
+#BDBridgeInviteWrap {
+    z-index: 2147483647;
+}
+
+    #BDBridgeInviteWrap #BDBridgeChatBox {
+        display: none;
+        z-index: 2147483648;
+        width: 310px;
+        height: 49px;
+        padding: 13px 7px 0 5px;
+        margin: -6px 0 0 0;
+        position: relative;
+        background: url(invite-send-bg-right.png)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send-bg-right.png*/ no-repeat top right;
+        line-height: normal;
+        overflow: hidden;
+    }
+
+    #BDBridgeInviteWrap #BDBridgeChatArea {
+        position: absolute;
+        top: 13px;
+        left: 5px;
+        width: 254px;
+        height: 31px;
+        border: 1px solid #999;
+        font-family: Tahoma;
+        font-size: 12px;
+        line-height: 15px;
+        resize: none;
+        background: #fff;
+        font-weight: normal;
+        text-align: left;
+    }
+
+    #BDBridgeInviteWrap #BDBridgeStartChat {
+        position: absolute;
+        top: 13px;
+        right: 10px;
+        height: 35px;
+        width: 39px;
+        background: url(invite-send.gif)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send.gif*/;
+        text-decoration: none;
+        line-height: normal;
+    }
+
+        #BDBridgeInviteWrap #BDBridgeStartChat:hover {
+            background: url(invite-send.gif)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send.gif*/ 0 -35px;
+            position: absolute;
+            line-height: normal;
+        }
+
+        #BDBridgeInviteWrap #BDBridgeStartChat:active {
+            background: url(invite-send.gif)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send.gif*/ 0 -70px;
+            position: absolute;
+            line-height: normal;
+        }
+
+
+    #BDBridgeInviteWrap #InviteContainer {
+        width: 320px;
+        height: 153px;
+        z-index: 2147483647;
+        position: relative;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        overflow: hidden;
+    }
+
+    #BDBridgeInviteWrap #bridgeTopContainer {
+        width: 312px;
+        height: 144px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+    }
+
+
+    #BDBridgeInviteWrap #ChatBox {
+        width: 301px;
+        height: 49px;
+        padding: 13px 7px 0 5px;
+        margin-top: -12px;
+        background: url(invite-send-bg.png)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send-bg.png*/;
+        _background: url(invite-send-bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send-bg.gif*/;
+    }
+
+        #BDBridgeInviteWrap #ChatBox a {
+            float: right;
+            height: 35px;
+            width: 39px;
+            background: url(invite-send.gif)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send.gif*/;
+            text-decoration: none;
+        }
+
+            #BDBridgeInviteWrap #ChatBox a:hover {
+                background: url(invite-send.gif)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send.gif*/ 0 -35px;
+            }
+
+            #BDBridgeInviteWrap #ChatBox a:active {
+                background: url(invite-send.gif)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send.gif*/ 0 -70px;
+            }
+
+    #BDBridgeInviteWrap .opacitymask {
+        filter: alpha(opacity=100);
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        opacity: 1;
+    }
+
+    #BDBridgeInviteWrap .opacitymaskhover {
+        filter: alpha(opacity=60);
+        -moz-opacity: 0.6;
+        -khtml-opacity: 0.6;
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+    #BDBridgeInviteWrap .opacitybtn {
+        filter: alpha(opacity=100);
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        opacity: 1;
+        width: 115px;
+        height: 47px;
+    }
+
+        #BDBridgeInviteWrap .opacitybtn:hover {
+            filter: alpha(opacity=60);
+            -moz-opacity: 0.6;
+            -khtml-opacity: 0.6;
+            opacity: 0.6;
+            position: absolute;
+        }
+
+    #BDBridgeInviteWrap #decorationskin {
+        float: left;
+        margin-left: 5px;
+        margin-top: 5px;
+        border: 2px solid #fff;
+    }
+
+    #BDBridgeInviteWrap #inviteright {
+        float: left;
+        width: auto;
+        clear: none;
+    }
+
+    #BDBridgeInviteWrap #bridgeinviteclose {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 5px;
+        right: 5px;
+        background: url(btn.png)/*tpa=http://static2.fuhai360.com/n140310/images/btn.png*/ -19px -63px;
+    }
+
+        #BDBridgeInviteWrap #bridgeinviteclose:hover {
+            filter: alpha(opacity=60);
+            -moz-opacity: 0.6;
+            -khtml-opacity: 0.6;
+            opacity: 0.6;
+        }
+
+    #BDBridgeInviteWrap .bridge-invite-button div {
+        float: right;
+    }
+
+    #BDBridgeInviteWrap #preinvitetext {
+        margin-left: 10px;
+        word-wrap: break-word;
+        word-break: normal;
+        text-align: left;
+        zoom: 1;
+    }
+
+        #BDBridgeInviteWrap #preinvitetext a {
+            text-decoration: none;
+        }
+
+    #BDBridgeInviteWrap .bdbridge-clearfix:after {
+        content: ".";
+        display: block;
+        visibility: hidden;
+        height: 1px;
+        clear: both;
+    }
+
+    #BDBridgeInviteWrap .bdbridge-clearfix {
+        *zoom: 1;
+    }
+
+    #BDBridgeInviteWrap #InviteContainer .bridge-invite-button {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        top: auto;
+        left: auto;
+    }
+
+    #BDBridgeInviteWrap #InviteContainer .invite-button {
+        color: #000;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        cursor: pointer;
+        clear: none;
+    }
+
+    #BDBridgeInviteWrap #InviteContainer .invite-button-hover {
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.8;
+        -khtml-opacity: 0.8;
+        opacity: 0.8;
+    }
+
+    #BDBridgeInviteWrap #BDBridgeChatBg {
+        float: left;
+        height: 62px;
+        width: 20px;
+        background: url("invite-send-bg.png")/*tpa=http://static2.fuhai360.com/n140310/images/invite-send-bg.png*/ repeat scroll 0 0 transparent;
+        margin: -13px 0 0 -5px;
+    }
+
+    #BDBridgeInviteWrap #BDBridgeChatBox #BDBridgeChatBgMiddle {
+        float: left;
+        width: 200px;
+        height: 52px;
+        background-color: #d6e3f0;
+        margin: -7px 0 0 0;
+    }
+
+    #BDBridgeInviteWrap #BDBridgeChatArea {
+        position: absolute;
+        top: 12px;
+        right: 60px;
+        height: 32px;
+        border: 1px solid #999;
+        font-family: Tahoma;
+        font-size: 12px;
+        resize: none;
+    }
+
+    #BDBridgeInviteWrap #BDBridgeInviteIframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+        display: none;
+    }
+
+
+
+@charset "utf-8";
+
+.BD-QIAO-WEBIM-LITE-WRAP div,
+.BD-QIAO-WEBIM-LITE-WRAP a,
+.BD-QIAO-WEBIM-LITE-WRAP span,
+.BD-QIAO-WEBIM-LITE-WRAP em,
+.BD-QIAO-WEBIM-LITE-WRAP select,
+.BD-QIAO-WEBIM-LITE-WRAP option,
+.BD-QIAO-WEBIM-LITE-WRAP table,
+.BD-QIAO-WEBIM-LITE-WRAP tr,
+.BD-QIAO-WEBIM-LITE-WRAP td,
+.BD-QIAO-WEBIM-LITE-WRAP img {
+    color: inherit;
+    width: auto;
+    text-align: left;
+    float: none;
+    clear: none;
+    background-color: transparent;
+    background-image: none;
+    margin: 0;
+    padding: 0;
+}
+
+.BD-QIAO-WEBIM-LITE-WRAP div,
+.BD-QIAO-WEBIM-LITE-WRAP a,
+.BD-QIAO-WEBIM-LITE-WRAP span,
+.BD-QIAO-WEBIM-LITE-WRAP em,
+.BD-QIAO-WEBIM-LITE-WRAP option,
+.BD-QIAO-WEBIM-LITE-WRAP table,
+.BD-QIAO-WEBIM-LITE-WRAP tr,
+.BD-QIAO-WEBIM-LITE-WRAP td,
+.BD-QIAO-WEBIM-LITE-WRAP img {
+    border: none;
+}
+
+.BD-QIAO-WEBIM-LITE-WRAP table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#BD_QIAO_WEBIM_LITE_WRAP {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    width: 320px;
+    font-size: 12px;
+    line-height: 1.5;
+    z-index: 2147483647;
+    background: #FFF;
+    color: #333;
+    text-align: left;
+}
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-title {
+        height: 26px;
+        line-height: 26px;
+        border: 1px solid #AFAFAF;
+        background: url(bg.png)/*tpa=http://static2.fuhai360.com/n140310/images/bg.png*/ 0px -178px repeat-x;
+        width: auto;
+        color: #333;
+        text-align: left;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-title-notify {
+        border-color: #9BCCFB;
+        background-position: 0px -152px;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-title-text {
+        font-size: 14px;
+        margin-left: 10px;
+        font-weight: bold;
+        color: #333;
+        _zoom: 1;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-title-notify-text {
+        margin-left: 10px;
+        cursor: pointer;
+        display: none;
+        color: #333;
+        _zoom: 1;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-title-notify .m-lite-title-notify-text {
+        display: inline;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-title-notify-text em {
+        display: inline-block;
+        margin-right: 3px;
+        height: 14px;
+        width: 19px;
+        line-height: 14px;
+        font-style: normal;
+        overflow: hidden;
+        text-align: center;
+        vertical-align: middle;
+        background: url(webim.png)/*tpa=http://static2.fuhai360.com/n140310/images/webim.png*/ -16px -16px no-repeat;
+        *display: inline;
+        *zoom: 1;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-title-btn {
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+        background: url(webim.png)/*tpa=http://static2.fuhai360.com/n140310/images/webim.png*/ 0px -75px no-repeat;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-title .btn-close {
+        background-position: -16px -75px;
+    }
+
+        #BD_QIAO_WEBIM_LITE_WRAP .m-lite-title .btn-close:hover {
+            background-position: 0px -75px;
+        }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-title .btn-max {
+        background-position: -48px -75px;
+    }
+
+        #BD_QIAO_WEBIM_LITE_WRAP .m-lite-title .btn-max:hover {
+            background-position: -32px -75px;
+        }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-title .btn-min {
+        background-position: -80px -75px;
+    }
+
+        #BD_QIAO_WEBIM_LITE_WRAP .m-lite-title .btn-min:hover {
+            background-position: -64px -75px;
+        }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-content {
+        position: relative;
+        border-left: 1px solid #AFAFAF;
+        border-right: 1px solid #AFAFAF;
+        padding-top: 10px;
+        height: 306px;
+        overflow-y: auto;
+        width: auto;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-msg {
+        position: relative;
+        width: 255px;
+        margin-bottom: 15px;
+        clear: both;
+        *clear: none;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-msg-info {
+        margin: 0px auto;
+        width: 200px;
+        margin-bottom: 15px;
+        padding: 5px;
+        background: #CDE8FA;
+        -webkit-border-radius: 3px;
+        -o-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        word-wrap: break-word;
+        break-word: break-all;
+        text-align: left;
+        clear: both;
+        *clear: none;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-msg-title {
+        text-align: left;
+        color: #333;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-msg-content {
+        padding: 10px;
+        -webkit-border-radius: 3px;
+        -o-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        word-wrap: break-word;
+        break-word: break-all;
+        text-align: left;
+        width: auto;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-msg-cursor {
+        position: absolute;
+        top: 30px;
+        width: 7px;
+        height: 11px;
+        overflow: hidden;
+        background: url(webim.png)/*tpa=http://static2.fuhai360.com/n140310/images/webim.png*/ -16px -61px no-repeat;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .msg-server {
+        float: left;
+        padding-left: 12px;
+    }
+
+        #BD_QIAO_WEBIM_LITE_WRAP .msg-server .m-lite-msg-content {
+            background: #CDE8FA;
+        }
+
+        #BD_QIAO_WEBIM_LITE_WRAP .msg-server .m-lite-msg-cursor {
+            background-position: -16px -61px;
+            left: 5px;
+        }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .msg-client {
+        float: right;
+        padding-right: 12px;
+    }
+
+        #BD_QIAO_WEBIM_LITE_WRAP .msg-client .m-lite-msg-content {
+            background: #DDDDDD;
+        }
+
+        #BD_QIAO_WEBIM_LITE_WRAP .msg-client .m-lite-msg-title {
+            text-align: right;
+        }
+
+        #BD_QIAO_WEBIM_LITE_WRAP .msg-client .m-lite-msg-cursor {
+            background-position: -23px -61px;
+            right: 5px;
+        }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-editor {
+        overflow: visible;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool {
+        height: 26px;
+        border: 1px solid #AFAFAF;
+        line-height: 26px;
+        background: url(bg.png)/*tpa=http://static2.fuhai360.com/n140310/images/bg.png*/ 0px -178px repeat-x;
+        width: auto;
+        position: relative;
+        overflow: visible;
+    }
+
+        #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool a {
+            color: #333;
+            text-decoration: none;
+        }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool-btn {
+        float: left;
+        width: 16px;
+        height: 16px;
+        margin-top: 5px;
+        margin-left: 5px;
+        overflow: hidden;
+        background: url(webim.png)/*tpa=http://static2.fuhai360.com/n140310/images/webim.png*/ 0px -58px;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool .btn-face {
+        width: 20px;
+        height: 20px;
+        margin-top: 3px;
+        background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/ 0 -29px no-repeat;
+    }
+
+        #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool .btn-face:hover {
+            background-position: 0 -49px;
+        }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool .btn-face-active {
+        background-position: 0 -69px;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool .btn-font {
+        width: 20px;
+        height: 20px;
+        margin-top: 3px;
+        background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/ 0 -89px no-repeat;
+    }
+
+        #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool .btn-font:hover {
+            background-position: 0px -109px;
+        }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool .btn-font-active {
+        background-position: 0px -129px;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool-sp-btn {
+        float: right;
+        padding-left: 20px;
+        height: 26px;
+        background: url(webim.png)/*tpa=http://static2.fuhai360.com/n140310/images/webim.png*/ -184px 5px no-repeat;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool-face {
+        position: absolute;
+        left: -1px;
+        top: -181px;
+        z-index: 20;
+        background: #fff;
+        width: auto;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool-font {
+        width: 298px;
+        height: 25px;
+        padding: 5px 10px 0;
+        background: #fff;
+        position: absolute;
+        top: -32px;
+        border: 1px solid #A8B3C7;
+        left: -1px;
+        z-index: 10;
+        width: auto;
+        overflow: visible;
+    }
+
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-input-area {
+        height: 60px;
+        border-left: 1px solid #AFAFAF;
+        border-right: 1px solid #AFAFAF;
+        padding: 5px;
+        width: auto;
+    }
+
+        #BD_QIAO_WEBIM_LITE_WRAP .m-lite-input-area iframe {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 60px;
+            background-color: #fff;
+        }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-opt {
+        height: 16px;
+        line-height: 16px;
+        padding: 5px 0;
+        position: relative;
+        border: 1px solid #AFAFAF;
+        color: #A4A4A4;
+        background: #E9E9E9;
+        width: auto;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-logo {
+        display: inline-block;
+        height: 16px;
+        width: 17px;
+        margin: 0px 5px;
+        overflow: hidden;
+        background: url(webim.png)/*tpa=http://static2.fuhai360.com/n140310/images/webim.png*/ -18px -44px no-repeat;
+        *display: inline;
+        *zoom: 1;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-qiao {
+        display: inline-block;
+        color: #333;
+        vertical-align: 4px;
+        *vertical-align: 2px;
+        *display: inline;
+        *zoom: 1;
+    }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-opt-btn {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        /*width: 58px;*/
+        width: 43px; /* 隐藏发送选项按钮 */
+        height: 28px;
+        background: url(webim.png)/*tpa=http://static2.fuhai360.com/n140310/images/webim.png*/ -35px -16px no-repeat;
+    }
+
+        #BD_QIAO_WEBIM_LITE_WRAP .m-lite-opt-btn:hover {
+            background-position: -93px -16px;
+        }
+
+        #BD_QIAO_WEBIM_LITE_WRAP .m-lite-opt-btn:active {
+            background-position: -93px -44px;
+        }
+
+    #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tip {
+        position: absolute;
+        top: 330px;
+        left: 1px;
+        height: 15px;
+        width: 308px;
+        padding: 0px 5px;
+        background: #CCC;
+        color: #FFF;
+        line-height: 15px;
+        text-align: left;
+    }
+
+.BD-QIAO-IM-FACE-WRAP table {
+    border-collapse: collapse;
+    border: 0;
+}
+
+.BD-QIAO-IM-FACE-WRAP td {
+    border: 1px solid #bcd;
+    background-color: #fff;
+}
+
+    .BD-QIAO-IM-FACE-WRAP td a {
+        padding: 5px;
+        display: block;
+        background-color: #fff;
+    }
+
+        .BD-QIAO-IM-FACE-WRAP td a:hover {
+            background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/;
+        }
+
+    .BD-QIAO-IM-FACE-WRAP td img {
+        display: block;
+        width: 19px;
+        height: 19px;
+        cursor: pointer;
+        border: none;
+        background-color: #fff;
+    }
+
+
+
+
+#FaceTab {
+    height: 19px;
+    width: 350px;
+    cursor: default;
+}
+
+    #FaceTab a {
+        float: left;
+        width: 61px;
+        height: 19px;
+        line-height: 19px;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+    }
+
+        #FaceTab a.active {
+            background: url(webim_facetab.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_facetab.gif*/;
+        }
+
+#FaceGroup table {
+    border-collapse: collapse;
+    border: 0;
+}
+
+#FaceGroup td {
+    width: 19px;
+    height: 19px;
+    border: 1px #bcd solid;
+    padding: 5px;
+}
+
+    #FaceGroup td.over {
+        background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/;
+    }
+
+#FaceGroup table img {
+    display: block;
+    width: 19px;
+    height: 19px;
+}
+
+#FaceGroup table span {
+    display: block;
+    width: 19px;
+    height: 19px;
+    cursor: default;
+}
+
+
+
+.BD-QIAO-IM-FONT-WRAP .m-font-family-select {
+    width: 135px;
+    vertical-align: 4px;
+    margin-right: 3px;
+    *vertical-align: -3px;
+}
+
+.BD-QIAO-IM-FONT-WRAP .m-font-size-select {
+    width: 45px;
+    vertical-align: 4px;
+    margin-right: 3px;
+    *vertical-align: -3px;
+    color: #000;
+}
+
+    .BD-QIAO-IM-FONT-WRAP .m-font-family-select option,
+    .BD-QIAO-IM-FONT-WRAP .m-font-size-select option {
+        color: #000;
+    }
+
+.BD-QIAO-IM-FONT-WRAP .m-font-btn {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/ no-repeat;
+}
+
+.BD-QIAO-IM-FONT-WRAP .m-font-btn {
+    *zoom: 1;
+}
+
+.BD-QIAO-IM-FONT-WRAP .m-font-bold {
+    background-position: 0 -149px;
+}
+
+    .BD-QIAO-IM-FONT-WRAP .m-font-bold:hover {
+        background-position: 0 -169px;
+    }
+
+.BD-QIAO-IM-FONT-WRAP .m-font-bold-on {
+    background-position: 0 -189px;
+}
+
+.BD-QIAO-IM-FONT-WRAP .m-font-italic {
+    background-position: 0 -209px;
+}
+
+    .BD-QIAO-IM-FONT-WRAP .m-font-italic:hover {
+        background-position: 0 -229px;
+    }
+
+.BD-QIAO-IM-FONT-WRAP .m-font-italic-on {
+    background-position: 0 -249px;
+}
+
+.BD-QIAO-IM-FONT-WRAP .m-font-underline {
+    background-position: 0 -269px;
+}
+
+    .BD-QIAO-IM-FONT-WRAP .m-font-underline:hover {
+        background-position: 0 -289px;
+    }
+
+.BD-QIAO-IM-FONT-WRAP .m-font-underline-on {
+    background-position: 0 -309px;
+}
+
+.BD-QIAO-IM-FONT-WRAP .m-font-color {
+    background-position: 0 -329px;
+}
+
+    .BD-QIAO-IM-FONT-WRAP .m-font-color:hover {
+        background-position: 0 -349px;
+    }
+
+.BD-QIAO-IM-FONT-WRAP .m-font-color-on {
+    background-position: 0 -369px;
+}
+
+.BD-QIAO-IM-FONT-WRAP .m-font-palette {
+    position: absolute;
+    z-index: 20;
+    border: 1px #a8b3c7 solid;
+    background: #fff;
+    padding: 5px;
+    top: 30px;
+    right: -1px;
+    line-height: 0px;
+    width: auto;
+}
+
+    .BD-QIAO-IM-FONT-WRAP .m-font-palette table,
+    .BD-QIAO-IM-FONT-WRAP .m-font-palette tbody,
+    .BD-QIAO-IM-FONT-WRAP .m-font-palette tr {
+        background-color: #fff;
+    }
+
+    .BD-QIAO-IM-FONT-WRAP .m-font-palette td {
+        font-size: 0;
+        background-color: #fff;
+    }
+
+    .BD-QIAO-IM-FONT-WRAP .m-font-palette a {
+        padding: 5px;
+        display: block;
+        background-color: #fff;
+    }
+
+        .BD-QIAO-IM-FONT-WRAP .m-font-palette a:hover {
+            background: #ccc;
+        }
+
+    .BD-QIAO-IM-FONT-WRAP .m-font-palette td span {
+        display: block;
+        width: 12px;
+        height: 10px;
+        border: 1px #669 solid;
+        cursor: pointer;
+    }
+
+#Font {
+    width: 20px;
+    height: 20px;
+    float: left;
+    border: 0;
+    margin-right: 3px;
+}
+
+.fontnormal {
+    background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/ 0 -89px;
+}
+
+.fontover {
+    background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/ 0 -109px;
+}
+
+.fonton {
+    background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/ 0 -129px;
+}
+
+
+
+
+.slides_container {
+    width: 1024px;
+    height: 303px;
+    overflow: hidden;
+}
+
+.pagination {
+    padding: 20px 10px;
+    text-align: center;
+    font-family: Arial, '宋体', Sans-Serif;
+}
+
+    .pagination .current {
+        color: White;
+        font-weight: bold;
+        background-color: #1A1A1A;
+    }
+
+    .pagination a {
+        background: none repeat scroll 0 0 #FFFFFF;
+        color: #555555 !important;
+    }
+
+    .pagination span, .pagination a {
+        display: block;
+        float: left;
+        font-size: 14px;
+        height: 22px;
+        line-height: 22px;
+        margin-right: 5px;
+        padding: 0 6px;
+    }
+
+.picnumeric {
+    text-align: center;
+    font-family: Arial, '宋体', Sans-Serif;
+    position: absolute;
+    right: 3px;
+    bottom: 5px;
+    z-index: 100;
+}
+
+    .picnumeric li {
+        display: block;
+        float: left;
+    }
+
+    .picnumeric .current a {
+        color: White;
+        background-color: #1A1A1A;
+        text-decoration: none;
+        border: 1px solid #1A1A1A;
+    }
+
+    .picnumeric a {
+        display: block;
+        float: left;
+        font-size: 12px;
+        height: 18px;
+        line-height: 18px;
+        margin-right: 5px;
+        padding: 0 6px;
+        font-weight: bold;
+        border: 1px solid Silver;
+        color: White;
+        background-color: Silver;
+    }
+
+.related {
+    background: none;
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 10px;
+    height: 27px;
+}
+
+    .related span {
+        background: none repeat scroll 0 0 #978056;
+        border-bottom: medium none;
+        color: #FFFFFF;
+        float: left;
+        font-size: 13px;
+        height: 25px;
+        min-width: 60px;
+        padding: 3px 15px 0;
+        text-align: center;
+    }
+
+.relatedlist {
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    overflow: hidden;
+    padding: 5px;
+}
+
+    .relatedlist li {
+        float: left;
+        height: 22px;
+        line-height: 22px;
+        margin-right: 10px;
+        overflow: hidden;
+        padding-left: 12px;
+        width: 30%;
+    }
+
+.btnPrev, .btnNext {
+    float: left;
+    height: 54px;
+    width: 17px;
+}
+
+.flash {
+    width: 1024px;
+    height: 303px;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.more1 {
+    width: 32px;
+    height: 9px;
+    border: 0px;
+    display: block;
+    float: right;
+    background: url(more_37.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/more_37.jpg*/ no-repeat scroll 0 0 transparent;
+}
+
+/*
+    图片放大
+*/
+
+#showproduct li {
+    list-style-type: none;
+}
+
+.zoomPad {
+    border: 1px solid #E6E6E6;
+}
+
+.hits {
+    border-bottom: 1px dotted #CCCCCC;
+    height: 25px;
+    line-height: 25px;
+    margin: 5px 0;
+    text-align: right;
+}
+
+.page {
+    margin: 15px 0;
+}
+
+
+
+#preview {
+    margin-top: 10px;
+    position: relative;
+    width: 600px;
+    margin-left: 50px;
+}
+
+    #preview .prev {
+        background: url("arrow-prev.png")/*tpa=http://static2.fuhai360.com/n140310/images/arrow-prev.png*/ repeat scroll 0 0 transparent;
+        left: 20px;
+    }
+
+    #preview .next, #preview .prev {
+        display: block;
+        height: 0;
+        overflow: hidden;
+        padding-top: 21px;
+        position: absolute;
+        top: 75px;
+        width: 21px;
+        z-index: 101;
+        margin-top: 20px;
+    }
+
+a {
+    text-decoration: none;
+}
+
+#preview .slides_container {
+    border: 2px solid #DFDFDF;
+    float: left;
+    height: 200px;
+    margin-left: 45px;
+    overflow: hidden;
+    width: 200px;
+}
+
+#preview .next {
+    background: url("arrow-next.png")/*tpa=http://static2.fuhai360.com/n140310/images/arrow-next.png*/ repeat scroll 0 0 transparent;
+    left: 250px;
+}
+
+#preview .paging {
+    background: none repeat scroll 0 0 #DFDFDF;
+    float: right;
+    padding: 5px;
+    width: 136px;
+}
+
+    #preview .paging li {
+        float: left;
+        height: 60px;
+        list-style-type: none;
+        margin: 3px;
+        width: 60px;
+    }
+
+#preview .slides_container {
+    margin-top: 20px;
+}
+
+.paging {
+    margin-top: 20px;
+}
+
+.product-info {
+    width: 660px;
+    overflow: hidden;
+}
+
+.footer span, .footer span, .footer a, .footer p {
+    color: #ccc !important;
+}
+
+    .footer a:hover {
+        text-decoration: underline !important;
+    }
+
+    .slide1 > li {
+  position: relative!important;
+}
