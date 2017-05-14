@@ -31,11 +31,12 @@ img {
 
 /*=================通用部分================*/
 body {
-    background: #f1f1f1;
+    background-image: url(images/back.jpg);
     font-family: "宋体";
     font-size: 12px;
     color: #444;
 }
+
 
 .w1000 {
     width: 1000px;
@@ -43,17 +44,16 @@ body {
     overflow: hidden;
     margin: 0 auto;
 }
-
 /*===============================================================乐学教育主页===========================================*/
 
 /*======头部======*/
 .header {
     height: 138px;
-    background: url(header_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/header_bg.gif*/ repeat-x;
+    background: url(images/daohang.jpg);
 }
 
 .head {
-    height: 138px; /*background:url(images/head_right_bg.jpg) no-repeat top right;*/
+    height: 138px; 
     position: relative;
 }
 
@@ -88,7 +88,7 @@ body {
 
         .head_right ul li {
             float: left;
-            background: url(li_img1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/li_img1.gif*/ no-repeat 8px center;
+            background: url(li_img1.gif) no-repeat 8px center;
             height: 24px;
             line-height: 24px;
             margin-top: 15px;
@@ -105,13 +105,14 @@ body {
 
 /*======导航======*/
 .nav_bar {
-    height: 49px;
-    background: url(nav_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/nav_bg.gif*/ repeat-x;
+    height: 58px;
+    background: url(images/daohang.jpg);
+    
 }
 
 .nav {
-    height: 44px;
-    background: url(menu_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/menu_bg.gif*/ repeat-x top;
+    height: 58px;
+    
 }
 
     .nav ul {
@@ -120,30 +121,39 @@ body {
     }
 
         .nav ul li {
-            float: left;
-            height: 44px;
-            line-height: 44px;
-            padding-left: 35px;
-            padding-right: 35px;
+            line-height: 58px;
+            padding-left: 30px;
+            padding-right: 30px;
+    height: 58px;
+    float: left;
         }
 
             .nav ul li a {
                 color: #fff;
                 display: block;
+                
+                
             }
-
+.nav ul li:hover{
+	width: 65px;
+	text-align: center;	
+	background-color: rgba(255,255,255,0.15);
+}
                 .nav ul li a:hover {
-                    color: #fb0000;
+                	
+	color: #fff;
+	
+    text-decoration: none;
                 }
 
         .nav ul .home a {
-            color: #fb0000;
+            color: #fff;
         }
-
+ 
 /*======banner条======*/
 .banner {
     height: 303px;
-    background: url(banner_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/banner_bg.gif*/ repeat-x;
+        background-color: rgba(194, 205, 214, 0.62);
 }
 
 #slide-index {
@@ -216,10 +226,80 @@ body {
     position: relative;
     height: 232px;
 }
+/*======图片效果======*/
+.box{
+    position: relative;
+    perspective: 1000px;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    opacity:1;
+    transform: translateY(0) rotateX(0);
+    transition: all 0.6s ease-in-out 0s;
+}
+.box:hover img{
+    transform: translateY(-100%) rotateX(90deg);
+    transform-origin: center bottom 0;
+    opacity:0;
+}
+.box .over-layer{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    background:#333d4b;
+    text-align:center;
+    transition: all 0.60s ease-in-out 0s;
+}
+.box:hover .over-layer{
+    opacity:1;
+}
+.box .title,
+.box .description,
+.box .social-links{
+    position: relative;
+    top: 11%;
+    color: #d3d3d3;
+}
+.box .title{
+    text-transform: capitalize;
+}
+.box .title:after,
+.box .description:after{
+    content:"";
+    width: 50%;
+    display: block;
+    margin: 10px auto 0;
+    border-bottom: 1px solid #fff;
+}
+.box .social-links{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+.box .social-links li{
+    margin: 10px;
+    display: inline-block;
+}
+.box .social-links li a{
+    color: #fff;
+    font-size: 20px;
+}
+.box .social-links li a:hover{
+    color: #d3d3d3;
+    text-decoration: none;
+}
+@media only screen and (max-width: 990px){
+    .box{  margin-bottom:20px; }
+}
 /*======快捷通道======*/
 .kjtd {
     height: 57px;
-    background: url(kjtd_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_bg.gif*/ repeat-x;
+    background: url(kjtd_bg.gif) repeat-x;
+    opacity: 0.7;
 }
 
 .kjtd_bar img {
@@ -296,7 +376,7 @@ body {
 /*======挑战高考 直击高考 走进乐学======*/
 .news {
     height: 276px;
-    background: url(news_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/news_bg.jpg*/;
+    background: url(news_bg.jpg);
 }
 
 .video {
@@ -344,7 +424,7 @@ body {
         }
 
 .tabs .hover {
-    background: url(news_hover.gif)/*tpa=http://static2.fuhai360.com/n140310/images/news_hover.gif*/ no-repeat;
+    background: url(news_hover.gif) no-repeat;
     color: #fff;
     cursor: pointer;
 }
@@ -371,7 +451,7 @@ body {
         height: 28px;
         line-height: 28px;
         border-bottom: 1px solid #d0d0d0;
-        background: url(news_li1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/news_li1.gif*/ no-repeat left center;
+        background: url(news_li1.gif) no-repeat left center;
         text-indent: 15px;
         vertical-align: bottom;
     }
@@ -386,7 +466,7 @@ body {
     }
 
         #con_tab_1 li a:hover, #con_tab_2 li:hover {
-            background: url(news_li2.gif)/*tpa=http://static2.fuhai360.com/n140310/images/news_li2.gif*/ no-repeat left center;
+            background: url(news_li2.gif) no-repeat left center;
         }
 /*======走进乐学======*/
 .zjlx {
@@ -448,7 +528,7 @@ body {
 .szll {
     width: 700px;
     height: 288px;
-    background: url(szll_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/szll_bg.jpg*/;
+    background: url(szll_bg.jpg);
 }
 
     .szll a:hover {
@@ -508,14 +588,14 @@ body {
     }
 
         .szll h2 a:hover, .cgal h2 a:hover, .cgzs h2 a:hover, .mxxy h2 a:hover {
-            text-decoration: underline;
+            text-decoration:none;
         }
 
 /*======成功案例======*/
 .cgal {
     width: 300px;
     height: 288px;
-    background: url(cgal_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/cgal_bg.jpg*/;
+    background: url(cgal_bg.jpg);
 }
 
     .cgal ul {
@@ -523,23 +603,26 @@ body {
     }
 
 .cgan_li2 {
-    background: url(cgal_li_02.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/cgal_li_02.jpg*/ no-repeat 14px center;
+    background: url(cgal_li_02.jpg) no-repeat 14px center;
     line-height: 25px;
     height: 25px;
 }
 
 .cgan_li1 {
-    background: url(news_li1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/news_li1.gif*/ no-repeat 14px center;
+    background: url(images/news_li1.png) no-repeat 14px center;
     line-height: 25px;
     height: 25px;
 }
 
     .cgan_li1:hover {
-        background: url(news_li2.gif)/*tpa=http://static2.fuhai360.com/n140310/images/news_li2.gif*/ no-repeat 14px center;
+        background: url(images/new_li2.png) no-repeat 14px center;
         line-height: 25px;
         height: 25px;
     }
-
+    .cgan_li1 a:hover{
+       text-decoration: none;
+       color: #1747b2;
+}
     .cgan_li1 span {
         color: #fff;
     }
@@ -554,19 +637,20 @@ body {
 }
 
     .cgal ul li a:hover {
-        text-decoration: underline;
-        color: #d20100;
+        text-decoration:none;
+        color: #1747b2;
     }
 
 /*======成果展示======*/
 .cgzs {
     height: 291px;
-    background: url(cgzs_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/cgzs_bg.gif*/;
+    background: url(cgzs_bg.gif);
     margin-top: 18px;
 }
 
     .cgzs a:hover {
         text-decoration: underline;
+        
     }
 
 .wncj, .xsal {
@@ -591,12 +675,12 @@ body {
     line-height: 22px;
     font-size: 12px;
     font-weight: bold;
-    background: url(cgzs_h2_li.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/cgzs_h2_li.jpg*/ no-repeat 2px center;
+    background: url(cgzs_h2_li.jpg) no-repeat 2px center;
     text-indent: 20px;
 }
 
 .wncj ul li, .xsal ul li, .wncj_text li {
-    background: url(li_img1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/li_img1.gif*/ no-repeat 2px center;
+    background: url(li_img1.gif) no-repeat 2px center;
     height: 28px;
     line-height: 28px;
     text-indent: 15px;
@@ -611,7 +695,7 @@ body {
 
         .wncj ul li a:hover, .xsal ul li a:hover, .wncj_text li a:hover {
             color: #d20100;
-            background: url(li_img2.gif)/*tpa=http://static2.fuhai360.com/n140310/images/li_img2.gif*/ no-repeat 2px center;
+            background: url(li_img2.gif) no-repeat 2px center;
         }
 
 .xqhj ul li {
@@ -636,7 +720,8 @@ body {
 /*======明星学员======*/
 .mxxy {
     height: 231px;
-    background: url(mxxy_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/mxxy_bg.jpg*/;
+        background-color: rgba(95, 129, 175, 0.69);
+    /*==background: url(images/biankuang.png);==*/
     margin-top: 18px;
 }
 
@@ -698,7 +783,7 @@ body {
     }
 
         .slide1 li a:hover {
-            color: #d20100;
+            color: #174799;
         }
 
 /*======友情链接======*/
@@ -757,7 +842,7 @@ body {
 
     .foot_right .foot_link li {
         float: left;
-        background: url(footer_li.png)/*tpa=http://static2.fuhai360.com/n140310/images/footer_li.png*/ no-repeat left center;
+        background: url(footer_li.png) no-repeat left center;
         height: 24px;
     }
 
@@ -784,7 +869,7 @@ body {
 /*======走进乐学======*/
 .banner1 {
     height: 233px;
-    background: url(banner_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/banner_bg.gif*/ repeat-x;
+    background: url(banner_bg.gif) repeat-x;
 }
 
     .banner1 img {
@@ -805,7 +890,7 @@ body {
 
 .zjlx_box, .szll_box {
     margin-top: 10px;
-    background: #FFF url(zjlx_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/zjlx_bg.jpg*/ no-repeat bottom center;
+    background: #FFF url(zjlx_bg.jpg) no-repeat bottom center;
 }
 /*===走进乐学左侧===*/
 .zjlx_lt {
@@ -817,16 +902,22 @@ body {
 /*走进乐学左侧菜单*/
 .left_nav {
     width: 249px;
-    height: auto;
+    height:43px; line-height:0px;
+    text-indent:14px;
+      display: inline;
+    padding: 15px 0 0 40px;
+   
     overflow: hidden;
-    background: url(left_nav_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/left_nav_bg.gif*/ no-repeat;
-    color: #fff;
+    background: url(images/fenge.png) no-repeat;
+    opacity: 0.9;
+    color: #000;
+   
 }
 
     .left_nav h2 {
-        font-weight: normal;
         font-family: "微软雅黑";
-        font-size: 20px;
+       font-size: 16px;
+    font-weight: bold;
         margin: 15px 0 0 40px;
     }
 
@@ -840,7 +931,7 @@ body {
     height: auto;
     overflow: hidden;
     margin: 20px 0 20px 10px;
-    background: url(zjlx_about_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/zjlx_about_bg.jpg*/ no-repeat bottom center;
+    background: url(zjlx_about_bg.jpg) no-repeat bottom center;
     display: inline;
 }
 
@@ -851,7 +942,7 @@ body {
         font-size: 14px;
         text-align: center;
         font-weight: bold;
-        background: url(zjlx_about_li_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/zjlx_about_li_bg.jpg*/ no-repeat bottom center;
+        background: url(zjlx_about_li_bg.jpg) no-repeat bottom center;
         margin-bottom: 5px;
     }
 
@@ -861,19 +952,22 @@ body {
         }
 
             .zjlx_lt_menu li a:hover, .zjlx_lt_menu .zjlx_about {
-                background: url(zjlx_about_li1.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/zjlx_about_li1.jpg*/;
+                background: url(images/zjlx_about_li1.jpg);
                 color: #fff;
             }
 /*走进乐学左侧 往年成绩*/
 .wncj1 { /*margin-left:20px;*/
-    font-weight: normal;
-    width: 249px; /*height:43px; line-height:43px;*/ /*text-indent:10px;*/
-    background: url(left_nav_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/left_nav_bg.gif*/;
+  
+    width: 249px; height:43px; line-height:27px;
+    text-indent:48px;
+   
+    background: url(images/fenge.png);
     font-family: "微软雅黑";
-    font-size: 20px;
     display: inline;
     padding: 15px 0 0 40px;
-    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
 }
 
     .wncj1 a {
@@ -888,7 +982,7 @@ body {
         width: 205px;
         height: 25px;
         line-height: 25px;
-        background: url(li_img1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/li_img1.gif*/ no-repeat 10px center;
+        background: url(li_img1.gif) no-repeat 10px center;
         text-indent: 20px;
     }
 
@@ -900,13 +994,14 @@ body {
             .wncj1_text li a:hover {
                 text-decoration: underline;
                 color: #d20100;
-                background: url(li_img2.gif)/*tpa=http://static2.fuhai360.com/n140310/images/li_img2.gif*/ no-repeat 10px center;
+                background: url(li_img2.gif) no-repeat 10px center;
             }
 /*走进乐学左侧 联系我们*/
 .zjlx_lxwm {
     width: 225px;
-    height: 228px;
-    background: url(zjlx_lxwm.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/zjlx_lxwm.jpg*/ center center;
+    background: url(images/connectus.jpg) center center;
+    opacity: 0.7;
+    background-repeat: no-repeat;
     margin-top: 10px;
     margin-left: 10px;
 }
@@ -932,14 +1027,14 @@ body {
 
     .zjlx_rt > h1 {
         float: left;
-        color: #dc0116;
+        color: #174799;
         font-size: 14px;
-        background: url(cgzs_h2_li.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/cgzs_h2_li.jpg*/ no-repeat 5px center;
+        background: url(images/news_li1.png) no-repeat 5px center;
         text-indent: 25px;
         line-height: 29px;
         height: 29px;
         width: 120px;
-        border-bottom: 3px solid #dc0116;
+        border-bottom: 3px solid #174799;
     }
 
 .xzwz {
@@ -990,7 +1085,7 @@ body {
 .jyjj_pic {
     width: 274px;
     height: 121px;
-    background: url(jyjj_pic_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/jyjj_pic_bg.jpg*/;
+    background: url(jyjj_pic_bg.jpg);
 }
 
     .jyjj_pic img {
@@ -1013,7 +1108,7 @@ body {
     height: 93px;
     border: 3px solid #eee;
     margin-top: 30px;
-    background: url(lxdt_li_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/lxdt_li_bg.gif*/ no-repeat 75px center;
+    background: url(lxdt_li_bg.gif) no-repeat 75px center;
 }
 
 .lxdt_date {
@@ -1032,7 +1127,7 @@ body {
         height: 57px;
         color: #fff;
         display: block;
-        background: url(lxzx_date_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/lxzx_date_bg.gif*/ no-repeat;
+        background: url(lxzx_date_bg.gif) no-repeat;
     }
 
         .lxdt_date a span {
@@ -1041,7 +1136,7 @@ body {
         }
 
         .lxdt_date a:hover {
-            background: url(lxzx_date_bg1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/lxzx_date_bg1.gif*/ no-repeat;
+            background: url(lxzx_date_bg1.gif) no-repeat;
         }
 
 .lxdt_txt {
@@ -1052,7 +1147,7 @@ body {
 
     .lxdt_txt a {
         float: left;
-        background: url(lxzx_li.gif)/*tpa=http://static2.fuhai360.com/n140310/images/lxzx_li.gif*/ no-repeat left center;
+        background: url(lxzx_li.gif) no-repeat left center;
         font-size: 14px;
         height: 29px;
         line-height: 29px;
@@ -1074,7 +1169,7 @@ body {
     }
 
     .lxdt_txt a:hover {
-        color: #dc0116;
+        color: #1747b2;
     }
 /* 乐学动态分页*/
 .lxdt_fy {
@@ -1166,7 +1261,7 @@ body {
     height: 178px;
     line-height: 28px;
     z-index: 1;
-    background: url(zjlx_listbg.png)/*tpa=http://static2.fuhai360.com/n140310/images/zjlx_listbg.png*/ no-repeat center bottom;
+    background: url(zjlx_listbg.png) no-repeat center bottom;
 }
 
 .link_img {
@@ -1200,7 +1295,7 @@ body {
     width: 274px;
     height: auto;
     border: 3px solid #f00;
-    background: url(transparent_bg.png)/*tpa=http://static2.fuhai360.com/n140310/images/transparent_bg.png*/ repeat;
+    background: url(transparent_bg.png) repeat;
 }
 
     .pop_box span {
@@ -1213,7 +1308,7 @@ body {
         font-family: "微软雅黑";
         font-size: 18px;
         color: #3b3b3b;
-        background: url(jsfc_li_bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/jsfc_li_bg.gif*/ no-repeat left center;
+        background: url(jsfc_li_bg.gif) no-repeat left center;
         text-indent: 10px;
         margin: 10px 0 0 10px;
     }
@@ -1365,12 +1460,12 @@ body {
     }
 
     .pager a {
-        color: #b61d24;
+        color: #222222;
     }
 
-    .pager ahover {
-        color: #b61d24;
-        background: #EBEBEB;
+    .pager a:hover {
+        color: #fff;
+        background: #1747b2;
         border-color: #cbcbcb;
     }
     /*隐藏页码信息*/
@@ -1379,9 +1474,9 @@ body {
     }
     /*当前页*/
     .pager .current {
-        color: #CBCBCB;
+        color: #fff;
         font-weight: bold;
-        background: #b61d24;
+        background: #1747b2;
         margin: 0 5px;
         padding: 0 5px;
         height: 20px;
@@ -1467,7 +1562,7 @@ body {
     width: 1024px;
     height: 37px;
     margin: 0 auto;
-    background: url(buttom_bg.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/buttom_bg.jpg*/ no-repeat;
+    background: url(buttom_bg.jpg) no-repeat;
 }
 
 .QQ_button {
@@ -1482,7 +1577,7 @@ body {
     text-indent: -3500px;
     width: 156px;
     height: 46px;
-    background: url(registration_button.png)/*tpa=http://static2.fuhai360.com/n140310/images/registration_button.png*/ no-repeat;
+    background: url(registration_button.png) no-repeat;
     cursor: pointer;
 }
 
@@ -1550,11 +1645,11 @@ body {
 }
 
 .test_01 {
-    background: url(test_bg.png)/*tpa=http://static2.fuhai360.com/n140310/images/test_bg.png*/ no-repeat 140px 0;
+    background: url(test_bg.png) no-repeat 140px 0;
 }
 
 .test_02 {
-    background: url(test_bg.png)/*tpa=http://static2.fuhai360.com/n140310/images/test_bg.png*/ no-repeat 140px -24px;
+    background: url(test_bg.png) no-repeat 140px -24px;
 }
 
 /*===============================================================班级设置 2.20===========================================*/
@@ -3440,7 +3535,7 @@ a {
 }
 
 .footer span, .footer span, .footer a, .footer p {
-    color: #ccc !important;
+    color: #333 ;
 }
 
     .footer a:hover {

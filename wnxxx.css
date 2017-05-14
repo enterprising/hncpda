@@ -12,7 +12,7 @@ border: 1px solid #ccc;
 	height: 405px;
 }
 .szll h2, .cgal h2, .cgzs h2 {
-	color: #f00;
+	color: #174799;
 	line-height: 40px;
 	padding-left: 20px;
 	border-bottom: 1px solid #ccc;
@@ -52,10 +52,12 @@ border: 1px solid #ccc;
 	height: 100%;
 }
 .szll {
+	background-color: rgba(255, 255, 255, 0.42);
 	margin-left: 0px;
 	maring-right: 10px;
 }
 .cgal {
+	background-color: rgba(255, 255, 255, 0.42);
 	margin-right: 0px;
 	width: 330px;
 }
@@ -82,15 +84,13 @@ border: 1px solid #ccc;
 	display: none;
 }
 .footer {
-	background: #fff;
+	background: rgba(28, 94, 118, 0.38);
+
 }
-.footer span, .footer span, .footer a, .footer p {
-    color: #000 !important;
-}
+
 .wnx_top{width:700px; border-bottom: 1px dashed darkgray; height:auto; min-height:230px; margin-top:20px; overflow: hidden;}
 .header {
     height: 138px;
-    background: #fff;
 }
 .xunlia_left{float:left;width:350px; height:230px;}
 .xunlia_left h3,.xunlia_right h3{width: 330px;  border-bottom: 1px dashed darkgray; }
