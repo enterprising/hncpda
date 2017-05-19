@@ -12,7 +12,9 @@ a {
 ul, ol {
     list-style: none;
 }
-
+p{
+    margin: 0 0 10px;
+    }
 img {
     border: 0;
 }
@@ -88,7 +90,7 @@ body {
 
         .head_right ul li {
             float: left;
-            background: url(li_img1.gif) no-repeat 8px center;
+            background: url(images/li_img1.gif) no-repeat 8px center;
             height: 24px;
             line-height: 24px;
             margin-top: 15px;
@@ -126,6 +128,7 @@ body {
             padding-right: 30px;
     height: 58px;
     float: left;
+    width: 60px;
         }
 
             .nav ul li a {
@@ -298,7 +301,7 @@ body {
 /*======快捷通道======*/
 .kjtd {
     height: 57px;
-    background: url(kjtd_bg.gif) repeat-x;
+    background: url(images/kjtd_bg.gif) repeat-x;
     opacity: 0.7;
 }
 
@@ -343,40 +346,40 @@ body {
                 }
 
         .kjtd_bar table tr .qqzx a {
-            background: url(kjtd_qq.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_qq.gif*/ no-repeat left center;
+            background: url(images/kjtd_qq.gif) no-repeat left center;
         }
 
             .kjtd_bar table tr .qqzx a:hover {
-                background: url(kjtd_qq1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_qq1.gif*/ no-repeat left center;
+                background: url(images/kjtd_qq1.gif) no-repeat left center;
             }
 
         .kjtd_bar table tr .zxzx a {
-            background: url(kjtd_zx.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_zx.gif*/ no-repeat left center;
+            background: url(images/kjtd_zx.gif) no-repeat left center;
         }
 
             .kjtd_bar table tr .zxzx a:hover {
-                background: url(kjtd_zx1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_zx1.gif*/ no-repeat left center;
+                background: url(images/kjtd_zx1.gif) no-repeat left center;
             }
 
         .kjtd_bar table tr .zxly a {
-            background: url(kjtd_ly.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_ly.gif*/ no-repeat left center;
+            background: url(images/kjtd_ly.gif) no-repeat left center;
         }
 
             .kjtd_bar table tr .zxly a:hover {
-                background: url(kjtd_ly1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_ly1.gif*/ no-repeat left center;
+                background: url(images/kjtd_ly1.gif) no-repeat left center;
             }
 
         .kjtd_bar table tr .zxxz a {
-            background: url(kjtd_xz.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_xz.gif*/ no-repeat left center;
+            background: url(images/kjtd_xz.gif) no-repeat left center;
         }
 
             .kjtd_bar table tr .zxxz a:hover {
-                background: url(kjtd_xz1.gif)/*tpa=http://static2.fuhai360.com/n140310/images/kjtd_xz1.gif*/ no-repeat left center;
+                background: url(images/kjtd_xz1.gif) no-repeat left center;
             }
 /*======挑战高考 直击高考 走进乐学======*/
 .news {
     height: 276px;
-    background: url(news_bg.jpg);
+    background: url(images/news_bg.jpg);
 }
 
 .video {
@@ -424,7 +427,7 @@ body {
         }
 
 .tabs .hover {
-    background: url(news_hover.gif) no-repeat;
+    background: url(images/news_hover.gif) no-repeat;
     color: #fff;
     cursor: pointer;
 }
@@ -451,7 +454,7 @@ body {
         height: 28px;
         line-height: 28px;
         border-bottom: 1px solid #d0d0d0;
-        background: url(news_li1.gif) no-repeat left center;
+        background: url(images/news_li1.gif) no-repeat left center;
         text-indent: 15px;
         vertical-align: bottom;
     }
@@ -466,7 +469,7 @@ body {
     }
 
         #con_tab_1 li a:hover, #con_tab_2 li:hover {
-            background: url(news_li2.gif) no-repeat left center;
+            background: url(images/news_li2.gif) no-repeat left center;
         }
 /*======走进乐学======*/
 .zjlx {
@@ -528,7 +531,7 @@ body {
 .szll {
     width: 700px;
     height: 288px;
-    background: url(szll_bg.jpg);
+    background: url(images/szll_bg.jpg);
 }
 
     .szll a:hover {
@@ -554,7 +557,7 @@ body {
             margin-left: 33px;
             margin-right: 33px;
             line-height: 20px;
-            _display: inline; /*去除IE6双边距*/
+            _display: inline; 
         }
 
             .szll ul li img {
@@ -595,7 +598,7 @@ body {
 .cgal {
     width: 300px;
     height: 288px;
-    background: url(cgal_bg.jpg);
+    background: url(images/cgal_bg.jpg);
 }
 
     .cgal ul {
@@ -603,7 +606,7 @@ body {
     }
 
 .cgan_li2 {
-    background: url(cgal_li_02.jpg) no-repeat 14px center;
+    background: url(images/cgal_li_02.jpg) no-repeat 14px center;
     line-height: 25px;
     height: 25px;
 }
@@ -644,7 +647,7 @@ body {
 /*======成果展示======*/
 .cgzs {
     height: 291px;
-    background: url(cgzs_bg.gif);
+    background: url(images/cgzs_bg.gif);
     margin-top: 18px;
 }
 
@@ -675,12 +678,12 @@ body {
     line-height: 22px;
     font-size: 12px;
     font-weight: bold;
-    background: url(cgzs_h2_li.jpg) no-repeat 2px center;
+    background: url(images/cgzs_h2_li.jpg) no-repeat 2px center;
     text-indent: 20px;
 }
 
 .wncj ul li, .xsal ul li, .wncj_text li {
-    background: url(li_img1.gif) no-repeat 2px center;
+    background: url(images/li_img1.gif) no-repeat 2px center;
     height: 28px;
     line-height: 28px;
     text-indent: 15px;
@@ -695,7 +698,7 @@ body {
 
         .wncj ul li a:hover, .xsal ul li a:hover, .wncj_text li a:hover {
             color: #d20100;
-            background: url(li_img2.gif) no-repeat 2px center;
+            background: url(images/li_img2.gif) no-repeat 2px center;
         }
 
 .xqhj ul li {
@@ -721,7 +724,6 @@ body {
 .mxxy {
     height: 231px;
         background-color: rgba(95, 129, 175, 0.69);
-    /*==background: url(images/biankuang.png);==*/
     margin-top: 18px;
 }
 
@@ -809,13 +811,7 @@ body {
 }
 
 /*======页面底部======*/
-.footer {
-    background: #5b5b5b;
-    height: 198px;
-    margin-top: 30px;
-    color: #ccc;
-    margin-bottom: 40px;
-}
+
 
     .footer a {
         color: #ccc;
@@ -842,7 +838,7 @@ body {
 
     .foot_right .foot_link li {
         float: left;
-        background: url(footer_li.png) no-repeat left center;
+        background: url(images/footer_li.png) no-repeat left center;
         height: 24px;
     }
 
@@ -869,7 +865,7 @@ body {
 /*======走进乐学======*/
 .banner1 {
     height: 233px;
-    background: url(banner_bg.gif) repeat-x;
+    background: url(images/banner_bg.gif) repeat-x;
 }
 
     .banner1 img {
@@ -890,7 +886,7 @@ body {
 
 .zjlx_box, .szll_box {
     margin-top: 10px;
-    background: #FFF url(zjlx_bg.jpg) no-repeat bottom center;
+    background: #FFF url(images/zjlx_bg.jpg) no-repeat bottom center;
 }
 /*===走进乐学左侧===*/
 .zjlx_lt {
@@ -931,7 +927,7 @@ body {
     height: auto;
     overflow: hidden;
     margin: 20px 0 20px 10px;
-    background: url(zjlx_about_bg.jpg) no-repeat bottom center;
+    background: url(images/zjlx_about_bg.jpg) no-repeat bottom center;
     display: inline;
 }
 
@@ -942,7 +938,7 @@ body {
         font-size: 14px;
         text-align: center;
         font-weight: bold;
-        background: url(zjlx_about_li_bg.jpg) no-repeat bottom center;
+        background: url(images/zjlx_about_li_bg.jpg) no-repeat bottom center;
         margin-bottom: 5px;
     }
 
@@ -952,7 +948,7 @@ body {
         }
 
             .zjlx_lt_menu li a:hover, .zjlx_lt_menu .zjlx_about {
-                background: url(images/zjlx_about_li1.jpg);
+                background-color: rgba(73,104,161,0.8);
                 color: #fff;
             }
 /*走进乐学左侧 往年成绩*/
@@ -982,7 +978,7 @@ body {
         width: 205px;
         height: 25px;
         line-height: 25px;
-        background: url(li_img1.gif) no-repeat 10px center;
+        background: url(images/li_img1.gif) no-repeat 10px center;
         text-indent: 20px;
     }
 
@@ -992,9 +988,9 @@ body {
         }
 
             .wncj1_text li a:hover {
-                text-decoration: underline;
-                color: #d20100;
-                background: url(li_img2.gif) no-repeat 10px center;
+                text-decoration: none;
+                color: #85a7d6;
+                background: url(images/li_img2.gif) no-repeat 10px center;
             }
 /*走进乐学左侧 联系我们*/
 .zjlx_lxwm {
@@ -1085,7 +1081,7 @@ body {
 .jyjj_pic {
     width: 274px;
     height: 121px;
-    background: url(jyjj_pic_bg.jpg);
+    background: url(images/jyjj_pic_bg.jpg);
 }
 
     .jyjj_pic img {
@@ -1108,7 +1104,7 @@ body {
     height: 93px;
     border: 3px solid #eee;
     margin-top: 30px;
-    background: url(lxdt_li_bg.gif) no-repeat 75px center;
+    background: url(images/lxdt_li_bg.gif) no-repeat 75px center;
 }
 
 .lxdt_date {
@@ -1127,7 +1123,7 @@ body {
         height: 57px;
         color: #fff;
         display: block;
-        background: url(lxzx_date_bg.gif) no-repeat;
+        background: url(images/lxzx_date_bg.gif) no-repeat;
     }
 
         .lxdt_date a span {
@@ -1136,7 +1132,7 @@ body {
         }
 
         .lxdt_date a:hover {
-            background: url(lxzx_date_bg1.gif) no-repeat;
+            background: url(images/lxzx_date_bg1.gif) no-repeat;
         }
 
 .lxdt_txt {
@@ -1147,7 +1143,7 @@ body {
 
     .lxdt_txt a {
         float: left;
-        background: url(lxzx_li.gif) no-repeat left center;
+        background: url(images/lxzx_li.gif) no-repeat left center;
         font-size: 14px;
         height: 29px;
         line-height: 29px;
@@ -1261,7 +1257,7 @@ body {
     height: 178px;
     line-height: 28px;
     z-index: 1;
-    background: url(zjlx_listbg.png) no-repeat center bottom;
+    background: url(images/zjlx_listbg.png) no-repeat center bottom;
 }
 
 .link_img {
@@ -1295,7 +1291,7 @@ body {
     width: 274px;
     height: auto;
     border: 3px solid #f00;
-    background: url(transparent_bg.png) repeat;
+    background: url(images/transparent_bg.png) repeat;
 }
 
     .pop_box span {
@@ -1308,7 +1304,7 @@ body {
         font-family: "微软雅黑";
         font-size: 18px;
         color: #3b3b3b;
-        background: url(jsfc_li_bg.gif) no-repeat left center;
+        background: url(images/jsfc_li_bg.gif) no-repeat left center;
         text-indent: 10px;
         margin: 10px 0 0 10px;
     }
@@ -1562,7 +1558,7 @@ body {
     width: 1024px;
     height: 37px;
     margin: 0 auto;
-    background: url(buttom_bg.jpg) no-repeat;
+    background: url(images/buttom_bg.jpg) no-repeat;
 }
 
 .QQ_button {
@@ -1577,7 +1573,7 @@ body {
     text-indent: -3500px;
     width: 156px;
     height: 46px;
-    background: url(registration_button.png) no-repeat;
+    background: url(images/registration_button.png) no-repeat;
     cursor: pointer;
 }
 
@@ -1631,7 +1627,7 @@ body {
     color: #333;
     cursor: pointer;
     font-weight: bold;
-    background: url(submit.png)/*tpa=http://static2.fuhai360.com/n140310/images/submit.png*/ no-repeat;
+    background: url(images/submit.png) no-repeat;
 }
 
 .submit {
@@ -1645,11 +1641,11 @@ body {
 }
 
 .test_01 {
-    background: url(test_bg.png) no-repeat 140px 0;
+    background: url(images/test_bg.png) no-repeat 140px 0;
 }
 
 .test_02 {
-    background: url(test_bg.png) no-repeat 140px -24px;
+    background: url(images/test_bg.png) no-repeat 140px -24px;
 }
 
 /*===============================================================班级设置 2.20===========================================*/
@@ -1989,7 +1985,7 @@ body {
 }
 
 #IconContainer .bdridge-user-img {
-    background: url(btn.png)/*tpa=http://static2.fuhai360.com/n140310/images/btn.png*/ 0 -75px;
+    background: url(images/btn.png) 0 -75px;
     width: 10px;
     height: 13px;
     line-height: 13px;
@@ -1998,7 +1994,7 @@ body {
 }
 
 #IconContainer .bdridge-user-img-disable {
-    background: url(btn.png)/*tpa=http://static2.fuhai360.com/n140310/images/btn.png*/ -72px -62px;
+    background: url(images/btn.png) -72px -62px;
     width: 10px;
     height: 13px;
     line-height: 13px;
@@ -2007,7 +2003,7 @@ body {
 }
 
 #IconContainer .bdridge-group-img {
-    background: url(btn.png)/*tpa=http://static2.fuhai360.com/n140310/images/btn.png*/ -34px -48px;
+    background: url(images/btn.png) -34px -48px;
     width: 16px;
     height: 14px;
     line-height: 16px;
@@ -2018,7 +2014,7 @@ body {
 }
 
 #IconContainer .bdridge-group-img-disable {
-    background: url(btn.png)/*tpa=http://static2.fuhai360.com/n140310/images/btn.png*/ -70px -48px;
+    background: url(images/btn.png) -70px -48px;
     width: 16px;
     height: 14px;
     line-height: 16px;
@@ -2028,18 +2024,18 @@ body {
 }
 
 #IconContainer .bdbridge-left-img {
-    background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ -50px 0 no-repeat;
+    background: url(images/icon_close.png) -50px 0 no-repeat;
     width: 25px;
     height: 66px;
 }
 
     #IconContainer .bdbridge-left-img:hover {
-        background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ -75px 0 no-repeat;
+        background: url(images/icon_close.png) -75px 0 no-repeat;
         cursor: pointer;
     }
 
 #IconContainer .bdbridge-left-hd-img {
-    background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ -25px 0 no-repeat;
+    background: url(images/icon_close.png) -25px 0 no-repeat;
     width: 25px;
     height: 68px;
 }
@@ -2055,11 +2051,11 @@ body {
     }
 
 #IconContainer .bdbridge-left-hd-img:hover {
-    background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ 0 0 no-repeat;
+    background: url(images/icon_close.png) 0 0 no-repeat;
 }
 
 #IconContainer .bdbridge-right-img {
-    background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ -100px 0 no-repeat;
+    background: url(images/icon_close.png) -100px 0 no-repeat;
     width: 23px;
     height: 66px;
     margin-left: 0;
@@ -2067,17 +2063,17 @@ body {
 }
 
     #IconContainer .bdbridge-right-img:hover {
-        background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ -123px 0 no-repeat;
+        background: url(images/icon_close.png) -123px 0 no-repeat;
     }
 
 #IconContainer .bdbridge-right-hd-img {
-    background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ -146px 0 no-repeat;
+    background: url(images/icon_close.png) -146px 0 no-repeat;
     width: 25px;
     height: 68px;
 }
 
     #IconContainer .bdbridge-right-hd-img:hover {
-        background: url(icon_close.png)/*tpa=http://static2.fuhai360.com/n140310/images/icon_close.png*/ -171px 0 no-repeat;
+        background: url(images/icon_close.png) -171px 0 no-repeat;
     }
 
 #IconContainer .bdbridge-item {
@@ -2213,7 +2209,7 @@ body {
     float: left;
     border-right: 1px solid #ccc;
     padding: 0 4px;
-    background: url(mess.gif)/*tpa=http://static2.fuhai360.com/n140310/images/mess.gif*/;
+    background: url(images/mess.gif);
     line-height: 20px;
 }
 
@@ -2295,7 +2291,7 @@ body {
     #BaiduBridgePigeon #BdBPTitleText {
         float: left;
         font-weight: bold;
-        background: url(mess-text.png)/*tpa=http://static2.fuhai360.com/n140310/images/mess-text.png*/;
+        background: url(images/mess-text.png);
         width: 61px;
         height: 21px;
     }
@@ -2337,17 +2333,17 @@ body {
 
     #BaiduBridgePigeon #BdBPClose {
         float: right;
-        background: url(messbtn.png)/*tpa=http://static2.fuhai360.com/n140310/images/messbtn.png*/ 0px 0px;
+        background: url(images/messbtn.png) 0px 0px;
         width: 19px;
         height: 19px;
     }
 
         #BaiduBridgePigeon #BdBPClose:hover {
-            background: url(messbtn.png)/*tpa=http://static2.fuhai360.com/n140310/images/messbtn.png*/ -19px 0px;
+            background: url(images/messbtn.png) -19px 0px;
         }
 
         #BaiduBridgePigeon #BdBPClose:active {
-            background: url(messbtn.png)/*tpa=http://static2.fuhai360.com/n140310/images/messbtn.png*/ -38px 0px;
+            background: url(mimages/essbtn.png) -38px 0px;
         }
 
     #BaiduBridgePigeon #BdBPSend {
@@ -2413,7 +2409,7 @@ body {
         margin-left: 70px;
         margin-top: 5px;
         margin-bottom: 5px;
-        background: url(btn.png)/*tpa=http://static2.fuhai360.com/n140310/images/btn.png*/ -88px -72px;
+        background: url(images/btn.png) -88px -72px;
     }
 
     #BaiduBridgePigeon .bd_bp_pigeon {
@@ -2444,7 +2440,7 @@ body {
         padding: 13px 7px 0 5px;
         margin: -6px 0 0 0;
         position: relative;
-        background: url(invite-send-bg-right.png)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send-bg-right.png*/ no-repeat top right;
+        background: url(images/invite-send-bg-right.png) no-repeat top right;
         line-height: normal;
         overflow: hidden;
     }
@@ -2471,19 +2467,19 @@ body {
         right: 10px;
         height: 35px;
         width: 39px;
-        background: url(invite-send.gif)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send.gif*/;
+        background: url(images/invite-send.gif);
         text-decoration: none;
         line-height: normal;
     }
 
         #BDBridgeInviteWrap #BDBridgeStartChat:hover {
-            background: url(invite-send.gif)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send.gif*/ 0 -35px;
+            background: url(images/invite-send.gif) 0 -35px;
             position: absolute;
             line-height: normal;
         }
 
         #BDBridgeInviteWrap #BDBridgeStartChat:active {
-            background: url(invite-send.gif)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send.gif*/ 0 -70px;
+            background: url(images/invite-send.gif) 0 -70px;
             position: absolute;
             line-height: normal;
         }
@@ -2514,24 +2510,24 @@ body {
         height: 49px;
         padding: 13px 7px 0 5px;
         margin-top: -12px;
-        background: url(invite-send-bg.png)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send-bg.png*/;
-        _background: url(invite-send-bg.gif)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send-bg.gif*/;
+        background: url(images/invite-send-bg.png);
+        _background: url(images/invite-send-bg.gif);
     }
 
         #BDBridgeInviteWrap #ChatBox a {
             float: right;
             height: 35px;
             width: 39px;
-            background: url(invite-send.gif)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send.gif*/;
+            background: url(images/invite-send.gif);
             text-decoration: none;
         }
 
             #BDBridgeInviteWrap #ChatBox a:hover {
-                background: url(invite-send.gif)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send.gif*/ 0 -35px;
+                background: url(images/invite-send.gif) 0 -35px;
             }
 
             #BDBridgeInviteWrap #ChatBox a:active {
-                background: url(invite-send.gif)/*tpa=http://static2.fuhai360.com/n140310/images/invite-send.gif*/ 0 -70px;
+                background: url(images/invite-send.gif) 0 -70px;
             }
 
     #BDBridgeInviteWrap .opacitymask {
@@ -2585,7 +2581,7 @@ body {
         height: 10px;
         top: 5px;
         right: 5px;
-        background: url(btn.png)/*tpa=http://static2.fuhai360.com/n140310/images/btn.png*/ -19px -63px;
+        background: url(images/btn.png) -19px -63px;
     }
 
         #BDBridgeInviteWrap #bridgeinviteclose:hover {
@@ -2651,7 +2647,7 @@ body {
         float: left;
         height: 62px;
         width: 20px;
-        background: url("invite-send-bg.png")/*tpa=http://static2.fuhai360.com/n140310/images/invite-send-bg.png*/ repeat scroll 0 0 transparent;
+        background: url("images/invite-send-bg.png") repeat scroll 0 0 transparent;
         margin: -13px 0 0 -5px;
     }
 
@@ -2741,7 +2737,7 @@ body {
         height: 26px;
         line-height: 26px;
         border: 1px solid #AFAFAF;
-        background: url(bg.png)/*tpa=http://static2.fuhai360.com/n140310/images/bg.png*/ 0px -178px repeat-x;
+        background: url(images/bg.png) 0px -178px repeat-x;
         width: auto;
         color: #333;
         text-align: left;
@@ -2782,7 +2778,7 @@ body {
         overflow: hidden;
         text-align: center;
         vertical-align: middle;
-        background: url(webim.png)/*tpa=http://static2.fuhai360.com/n140310/images/webim.png*/ -16px -16px no-repeat;
+        background: url(images/webim.png) -16px -16px no-repeat;
         *display: inline;
         *zoom: 1;
     }
@@ -2794,7 +2790,7 @@ body {
         width: 16px;
         height: 16px;
         overflow: hidden;
-        background: url(webim.png)/*tpa=http://static2.fuhai360.com/n140310/images/webim.png*/ 0px -75px no-repeat;
+        background: url(images/webim.png) 0px -75px no-repeat;
     }
 
     #BD_QIAO_WEBIM_LITE_WRAP .m-lite-title .btn-close {
@@ -2881,7 +2877,7 @@ body {
         width: 7px;
         height: 11px;
         overflow: hidden;
-        background: url(webim.png)/*tpa=http://static2.fuhai360.com/n140310/images/webim.png*/ -16px -61px no-repeat;
+        background: url(images/webim.png) -16px -61px no-repeat;
     }
 
     #BD_QIAO_WEBIM_LITE_WRAP .msg-server {
@@ -2924,7 +2920,7 @@ body {
         height: 26px;
         border: 1px solid #AFAFAF;
         line-height: 26px;
-        background: url(bg.png)/*tpa=http://static2.fuhai360.com/n140310/images/bg.png*/ 0px -178px repeat-x;
+        background: url(images/bg.png) 0px -178px repeat-x;
         width: auto;
         position: relative;
         overflow: visible;
@@ -2942,14 +2938,14 @@ body {
         margin-top: 5px;
         margin-left: 5px;
         overflow: hidden;
-        background: url(webim.png)/*tpa=http://static2.fuhai360.com/n140310/images/webim.png*/ 0px -58px;
+        background: url(images/webim.png) 0px -58px;
     }
 
     #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool .btn-face {
         width: 20px;
         height: 20px;
         margin-top: 3px;
-        background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/ 0 -29px no-repeat;
+        background: url(images/webim_toolbar.gif) 0 -29px no-repeat;
     }
 
         #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool .btn-face:hover {
@@ -2964,7 +2960,7 @@ body {
         width: 20px;
         height: 20px;
         margin-top: 3px;
-        background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/ 0 -89px no-repeat;
+        background: url(images/webim_toolbar.gif) 0 -89px no-repeat;
     }
 
         #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool .btn-font:hover {
@@ -2979,7 +2975,7 @@ body {
         float: right;
         padding-left: 20px;
         height: 26px;
-        background: url(webim.png)/*tpa=http://static2.fuhai360.com/n140310/images/webim.png*/ -184px 5px no-repeat;
+        background: url(images/webim.png) -184px 5px no-repeat;
     }
 
     #BD_QIAO_WEBIM_LITE_WRAP .m-lite-tool-face {
@@ -3039,7 +3035,7 @@ body {
         width: 17px;
         margin: 0px 5px;
         overflow: hidden;
-        background: url(webim.png)/*tpa=http://static2.fuhai360.com/n140310/images/webim.png*/ -18px -44px no-repeat;
+        background: url(images/webim.png) -18px -44px no-repeat;
         *display: inline;
         *zoom: 1;
     }
@@ -3060,7 +3056,7 @@ body {
         /*width: 58px;*/
         width: 43px; /* 隐藏发送选项按钮 */
         height: 28px;
-        background: url(webim.png)/*tpa=http://static2.fuhai360.com/n140310/images/webim.png*/ -35px -16px no-repeat;
+        background: url(images/webim.png) -35px -16px no-repeat;
     }
 
         #BD_QIAO_WEBIM_LITE_WRAP .m-lite-opt-btn:hover {
@@ -3101,7 +3097,7 @@ body {
     }
 
         .BD-QIAO-IM-FACE-WRAP td a:hover {
-            background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/;
+            background: url(images/webim_toolbar.gif);
         }
 
     .BD-QIAO-IM-FACE-WRAP td img {
@@ -3133,7 +3129,7 @@ body {
     }
 
         #FaceTab a.active {
-            background: url(webim_facetab.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_facetab.gif*/;
+            background: url(images/webim_facetab.gif);
         }
 
 #FaceGroup table {
@@ -3149,7 +3145,7 @@ body {
 }
 
     #FaceGroup td.over {
-        background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/;
+        background: url(images/webim_toolbar.gif);
     }
 
 #FaceGroup table img {
@@ -3191,7 +3187,7 @@ body {
     width: 20px;
     height: 20px;
     display: inline-block;
-    background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/ no-repeat;
+    background: url(images/webim_toolbar.gif) no-repeat;
 }
 
 .BD-QIAO-IM-FONT-WRAP .m-font-btn {
@@ -3296,15 +3292,15 @@ body {
 }
 
 .fontnormal {
-    background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/ 0 -89px;
+    background: url(images/webim_toolbar.gif) 0 -89px;
 }
 
 .fontover {
-    background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/ 0 -109px;
+    background: url(images/webim_toolbar.gif) 0 -109px;
 }
 
 .fonton {
-    background: url(webim_toolbar.gif)/*tpa=http://static2.fuhai360.com/n140310/images/webim_toolbar.gif*/ 0 -129px;
+    background: url(images/webim_toolbar.gif) 0 -129px;
 }
 
 
@@ -3435,7 +3431,7 @@ body {
     border: 0px;
     display: block;
     float: right;
-    background: url(more_37.jpg)/*tpa=http://static2.fuhai360.com/n140310/images/more_37.jpg*/ no-repeat scroll 0 0 transparent;
+    background: url(images/more_37.jpg) no-repeat scroll 0 0 transparent;
 }
 
 /*
@@ -3472,7 +3468,7 @@ body {
 }
 
     #preview .prev {
-        background: url("arrow-prev.png")/*tpa=http://static2.fuhai360.com/n140310/images/arrow-prev.png*/ repeat scroll 0 0 transparent;
+        background: url("images/arrow-prev.png") repeat scroll 0 0 transparent;
         left: 20px;
     }
 
@@ -3502,7 +3498,7 @@ a {
 }
 
 #preview .next {
-    background: url("arrow-next.png")/*tpa=http://static2.fuhai360.com/n140310/images/arrow-next.png*/ repeat scroll 0 0 transparent;
+    background: url("images/arrow-next.png") repeat scroll 0 0 transparent;
     left: 250px;
 }
 
